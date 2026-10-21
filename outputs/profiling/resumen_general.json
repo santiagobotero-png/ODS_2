@@ -1,0 +1,16 @@
+{
+    "archivo_fuente": "Evaluaciones_Agropecuarias_Municipales_–_EVA._2019_-_2025._Base_Agrícola_20260905.csv",
+    "total_registros": 166732,
+    "total_columnas": 18,
+    "total_valores_nulos": 0,
+    "filas_con_al_menos_un_nulo": 0,
+    "filas_duplicadas_exactas": 0,
+    "registros_con_problemas_temporales": 0,
+    "codigos_departamento_con_multiples_nombres": 0,
+    "codigos_municipio_con_multiples_nombres": 0,
+    "combinaciones_repetidas_clave_1": 0,
+    "combinaciones_repetidas_clave_2": 0,
+    "registros_area_cosechada_mayor_sembrada": 13208,
+    "registros_sembrada_cero_cosechada_positiva": 3003,
+    "registros_con_metricas_negativas": 0
+}

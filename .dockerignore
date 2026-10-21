@@ -1,0 +1,15 @@
+.venv/
+.git/
+.env
+__pycache__/
+*.py[cod]
+
+data/
+outputs/
+airflow_logs/
+logs/
+notebooks/
+test/
+
+requirements-dev.txt
+requirements-lock.txt

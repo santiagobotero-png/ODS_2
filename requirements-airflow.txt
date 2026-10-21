@@ -1,0 +1,9 @@
+# Provider para autenticación y gestión de usuarios mediante FAB
+apache-airflow-providers-fab
+
+# Dependencias utilizadas por los ETL
+pandas
+numpy
+requests
+psycopg2-binary
+great_expectations==1.24.0

@@ -1,0 +1,145 @@
+{
+  "started_at_utc": "2026-10-19T20:42:30.884383+00:00",
+  "input_directory": "C:\\Users\\Monica\\Desktop\\ETL\\ODS2\\data\\raw\\open_meteo_daily_batches",
+  "expected_period": {
+    "start_date": "2019-01-01",
+    "end_date": "2025-12-31",
+    "days_per_municipality": 2557
+  },
+  "expected_extraction": {
+    "municipalities": 1103,
+    "batches": 45,
+    "records": 2820371,
+    "weather_units": {
+      "temperature_2m_mean": "°C",
+      "temperature_2m_max": "°C",
+      "temperature_2m_min": "°C",
+      "precipitation_sum": "mm",
+      "relative_humidity_2m_mean": "%",
+      "et0_fao_evapotranspiration": "mm"
+    }
+  },
+  "batches_discovered": 8,
+  "batches_validated": 8,
+  "records_validated": 511400,
+  "municipalities_validated": 200,
+  "missing_batches": [
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "warnings": [
+    "PARTIAL EXTRACTION: 8 of 45 batches available. Missing batches: [8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]. Global completeness is not approved."
+  ],
+  "batch_results": [
+    {
+      "batch_file": "weather_batch_001.csv",
+      "batch_number": 1,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_002.csv",
+      "batch_number": 2,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_003.csv",
+      "batch_number": 3,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_004.csv",
+      "batch_number": 4,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_005.csv",
+      "batch_number": 5,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_006.csv",
+      "batch_number": 6,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_007.csv",
+      "batch_number": 7,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_010.csv",
+      "batch_number": 10,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    }
+  ],
+  "status": "PARTIAL",
+  "error": null,
+  "finished_at_utc": "2026-10-19T20:42:34.335506+00:00"
+}

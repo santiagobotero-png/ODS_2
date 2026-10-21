@@ -1,0 +1,6 @@
+﻿pandas
+numpy
+requests
+SQLAlchemy
+psycopg2-binary
+great-expectations==1.24.0

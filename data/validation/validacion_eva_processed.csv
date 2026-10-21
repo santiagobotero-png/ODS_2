@@ -1,0 +1,25 @@
+﻿categoria,validacion,estado,riesgo,detalle,accion_recomendada
+ARCHIVO,EVA-P04,OK,BAJO,Archivo leído correctamente: 166732 registros.,Continuar con las validaciones.
+ESQUEMA,EVA-P05,OK,BAJO,Las 18 columnas existen y respetan el orden contractual.,Continuar con las validaciones.
+VOLUMEN,EVA-P06,OK,BAJO,Volumen coincidente: 166732 registros.,Continuar con las validaciones.
+INTEGRIDAD_ETL,EVA-P08,OK,BAJO,Se conserva el número de filas: 166732.,Continuar con las validaciones.
+GREAT_EXPECTATIONS,EVA-GX-01,OK,BAJO,Todas las expectativas GX fueron satisfechas.,Continuar con las demás validaciones.
+TIPOS_Y_DOMINIOS,EVA-P10,OK,BAJO,Todos los años son enteros entre 2019 y 2025.,Continuar con las validaciones.
+TIPOS_Y_DOMINIOS,EVA-P11-area_sembrada,OK,BAJO,area_sembrada: valores informados numéricos válidos.,Continuar con las validaciones.
+TIPOS_Y_DOMINIOS,EVA-P11-area_cosechada,OK,BAJO,area_cosechada: valores informados numéricos válidos.,Continuar con las validaciones.
+TIPOS_Y_DOMINIOS,EVA-P11-produccion,OK,BAJO,produccion: valores informados numéricos válidos.,Continuar con las validaciones.
+TIPOS_Y_DOMINIOS,EVA-P11-rendimiento,OK,BAJO,rendimiento: valores informados numéricos válidos.,Continuar con las validaciones.
+CODIGOS,EVA-P12,OK,BAJO,Código de departamento: todos los registros cumplen la regla.,Continuar con las validaciones.
+CODIGOS,EVA-P13,OK,BAJO,Código de municipio: todos los registros cumplen la regla.,Continuar con las validaciones.
+CODIGOS,EVA-P14,OK,BAJO,Código de cultivo: todos los registros cumplen la regla.,Continuar con las validaciones.
+CODIGOS,EVA-P15,OK,BAJO,Coherencia territorial: todos los registros cumplen la regla.,Continuar con las validaciones.
+TEMPORALIDAD,EVA-P16,OK,BAJO,Todos los periodos pertenecen al dominio de 21 valores.,Continuar con las validaciones.
+TEMPORALIDAD,EVA-P17,OK,BAJO,anio coincide con el año indicado en periodo.,Continuar con las validaciones.
+UNICIDAD,EVA-P19,OK,BAJO,No se encontraron claves naturales duplicadas.,Continuar con las validaciones.
+UNICIDAD,EVA-P20,OK,BAJO,Todas las claves naturales están completas.,Continuar con las validaciones.
+REGLAS_NEGOCIO,EVA-P21-area_sembrada,OK,BAJO,No se encontraron valores negativos en area_sembrada.,Continuar con las validaciones.
+REGLAS_NEGOCIO,EVA-P21-area_cosechada,OK,BAJO,No se encontraron valores negativos en area_cosechada.,Continuar con las validaciones.
+REGLAS_NEGOCIO,EVA-P21-produccion,OK,BAJO,No se encontraron valores negativos en produccion.,Continuar con las validaciones.
+REGLAS_NEGOCIO,EVA-P21-rendimiento,OK,BAJO,No se encontraron valores negativos en rendimiento.,Continuar con las validaciones.
+REGLAS_NEGOCIO,EVA-P22,ADVERTENCIA,MEDIO,13208 registros tienen área cosechada superior al área sembrada.,Revisar la coherencia agronómica de los registros afectados.
+REGLAS_NEGOCIO,EVA-P23,ADVERTENCIA,MEDIO,3003 registros tienen área sembrada igual a cero y área cosechada positiva.,Revisar los registros afectados; no cambiar sus valores automáticamente.
