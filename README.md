@@ -428,7 +428,7 @@ At the DAG configuration level, the orchestration retry policy is defined as fol
 # 10. Reliability Testing and Evidence
 
 ### 10.1 Test A: Successful Execution 
-![successful execution](./assets/mi-imagen.png)
+![successful execution](assets/prueba.jpeg)
 **Objective:** Demonstrate that the complete ETL pipeline, including parallelizable agricultural and climate data branches, can execute from start to finish without errors. 
 **Scenario and Execution:** A manual run of the `etl_ods2_pipeline` DAG (version v3) was triggered by the administrator (`airflow_admin`). 
 
@@ -440,8 +440,8 @@ At the DAG configuration level, the orchestration retry policy is defined as fol
 **Conclusion:** The system is fully stable and functional. The DAG design correctly orchestrates the extraction, transformation, validation, and simultaneous loading of multiple sources into PostgreSQL without interruptions.
 
 ## 10.2. Test B: Controlled Critical Failure
-![controlled critical failure](./assets/pruebaB)
-![controlled critical failure](./assets/pruebaBB)
+![controlled critical failure](assets/pruebaBB.jpeg)
+![controlled critical failure](assets/pruebaB.jpeg)
 **Objective:** Demonstrate pipeline resilience, dependency enforcement, and branch isolation when a critical extraction task fails.
 
 **Scenario and Execution:** During this test, the pipeline encountered a critical failure at the very beginning of the climate data workflow. The `extraer_weather` task failed to complete successfully (e.g., due to API unreachability or exceeding maximum retry limits).
@@ -467,8 +467,8 @@ At the DAG configuration level, the orchestration retry policy is defined as fol
 The analytical product is a Power BI dashboard connected to the PostgreSQL 16 Data Warehouse (`ods2_dw`). It answers requirements **R6** (climate vs. agricultural performance) and **R7** (low yield under atypical climate), and it is the visible proof that the Open-Meteo API source adds value on top of the EVA dataset. All figures are read from the DW (schemas `comun`, `eva`, `weather`); no CSV, raw or intermediate file is used by the dashboard.
 
 ## 11.1. Dashboard and Visualizations
-![Safe Rerun](./assets/dashboardr6)
-![Safe Rerun](./assets/dashboardr7)
+![Safe Rerun](assets/dashboardr6.jpeg)
+![Safe Rerun](assets/dashboardr7.jpeg)
 ### Connection and data model
 
 - **Connection:** Power BI Desktop, PostgreSQL connector, Import mode, database `ods2_dw`.
