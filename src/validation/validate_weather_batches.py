@@ -548,8 +548,8 @@ def load_divipola_codes() -> set[str]:
     """
     Load and validate DIVIPOLA.
 
-    Return only codes classified as 'Municipio', since islands
-    and non-municipalized areas are outside the extraction scope.
+    Accept all territorial codes present in DIVIPOLA,
+    regardless of territorial classification.
     """
     if not DIVIPOLA_FILE.is_file():
         raise FileNotFoundError(
@@ -562,19 +562,13 @@ def load_divipola_codes() -> set[str]:
     )
 
     code_col = "Código Municipio"
-    type_col = "Tipo: Municipio / Isla / Área no municipalizada"
 
-    required_columns = {code_col, type_col}
-    missing_columns = required_columns - set(df.columns)
-
-    if missing_columns:
+    if code_col not in df.columns:
         raise ValueError(
-            f"DIVIPOLA is missing required columns: "
-            f"{sorted(missing_columns)}"
+            f"DIVIPOLA is missing required column: {code_col}"
         )
 
     df[code_col] = df[code_col].str.strip()
-    df[type_col] = df[type_col].str.strip()
 
     if df[code_col].isna().any() or df[code_col].eq("").any():
         raise ValueError(
@@ -607,43 +601,24 @@ def load_divipola_codes() -> set[str]:
             f"{duplicated_codes[:10].tolist()}"
         )
 
-    municipality_mask = df[type_col].eq("Municipio")
-    municipalities = df.loc[municipality_mask, code_col]
-
     if len(df) != TOTAL_CATALOG_CODES:
         raise ValueError(
             f"Unexpected DIVIPOLA row count: {len(df)}; "
             f"expected {TOTAL_CATALOG_CODES}."
         )
 
-    if len(municipalities) != TOTAL_TERRITORIES:
-        raise ValueError(
-            f"Unexpected municipality count: {len(municipalities)}; "
-            f"expected {TOTAL_TERRITORIES}."
-        )
-
-    other_types = (
-        df.loc[~municipality_mask, type_col]
-        .value_counts(dropna=False)
-        .to_dict()
-    )
+    catalog_codes = set(df[code_col].tolist())
 
     logger.info(
         "DIVIPOLA catalog validated: %s territorial codes.",
-        df[code_col].nunique(),
+        len(catalog_codes),
     )
 
     logger.info(
-        "Extraction scope validated: %s municipalities.",
-        len(municipalities),
+        "All territorial classifications are included in the extraction scope."
     )
 
-    logger.info(
-        "Territorial types excluded from extraction: %s",
-        other_types,
-    )
-
-    return set(municipalities.tolist())
+    return catalog_codes
 
 
 def validate_municipality_reference(

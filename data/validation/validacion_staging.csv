@@ -1,0 +1,9 @@
+﻿categoria,validacion,estado,riesgo,detalle,accion_recomendada
+Archivo,Existencia del archivo,OK,BAJO,Archivo encontrado: /opt/airflow/project/data/raw/eva_agricola_raw.csv,Sin acción correctiva.
+Volumen,Cantidad de registros,OK,BAJO,"Se encontraron 166,732 registros, coincidiendo con el volumen de referencia.",Sin acción correctiva.
+Estructura,Columnas esperadas,OK,BAJO,Las 18 columnas coinciden en nombre y orden.,Sin acción correctiva.
+Tipos,Tipos de datos,OK,BAJO,Códigos y dimensiones conservados como texto; año entero y métricas numéricas.,Sin acción correctiva.
+Completitud,Nulos y vacíos,OK,BAJO,No se encontraron nulos ni cadenas vacías.,Sin acción correctiva.
+Identificadores,Códigos geográficos y de cultivo,OK,BAJO,Los códigos presentes cumplen las reglas estructurales aplicadas.,Sin acción correctiva.
+Great Expectations,Expectation Suite,OK,BAJO,GX ejecutó correctamente las expectativas definidas para 18 columnas.,Sin acción correctiva.
+Resultado final,Decisión de calidad del staging,APROBADO,GLOBAL,Resultado calculado a partir de los controles ejecutados.,"No promover a la siguiente etapa si está BLOQUEADO. Si REQUIERE_REVISION, evaluar las advertencias según la política del proceso antes de continuar. APROBADO indica que no se registraron errores ni advertencias bloqueantes."

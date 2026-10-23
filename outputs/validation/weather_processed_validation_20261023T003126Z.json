@@ -1,0 +1,403 @@
+{
+  "dataset": "weather",
+  "stage": "post_transformation",
+  "validator": "validate_weather_processed.py",
+  "started_at_utc": "2026-10-23T00:28:23+00:00",
+  "processed_file": "/opt/airflow/project/data/processed/weather_processed.csv",
+  "input_directory": "/opt/airflow/project/data/raw/open_meteo_daily_batches",
+  "divipola_file": "/opt/airflow/project/data/source/divipola.csv",
+  "periodo_esperado": {
+    "inicio": "2019-01-01",
+    "fin": "2025-12-31",
+    "dias_por_municipio": 2557
+  },
+  "municipios_esperados": 1103,
+  "validations": [
+    {
+      "id": "WX-POST-01",
+      "categoria": "ARCHIVO",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Archivo leído correctamente: 2,820,371 registros.",
+      "accion_recomendada": "Continuar con las validaciones.",
+      "metricas": {
+        "rows": 2820371,
+        "columns": 13
+      }
+    },
+    {
+      "id": "WX-POST-02",
+      "categoria": "ESQUEMA",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "El esquema coincide con las 13 columnas esperadas.",
+      "accion_recomendada": "Alinear la transformación con el esquema acordado.",
+      "metricas": {
+        "expected_columns": [
+          "location_id",
+          "date",
+          "temperature_2m_mean",
+          "temperature_2m_max",
+          "temperature_2m_min",
+          "precipitation_sum",
+          "relative_humidity_2m_mean",
+          "et0_fao_evapotranspiration",
+          "municipality_code",
+          "municipality_name",
+          "latitude",
+          "longitude",
+          "source_batch_id"
+        ],
+        "actual_columns": [
+          "location_id",
+          "date",
+          "temperature_2m_mean",
+          "temperature_2m_max",
+          "temperature_2m_min",
+          "precipitation_sum",
+          "relative_humidity_2m_mean",
+          "et0_fao_evapotranspiration",
+          "municipality_code",
+          "municipality_name",
+          "latitude",
+          "longitude",
+          "source_batch_id"
+        ],
+        "missing_columns": [],
+        "unexpected_columns": [],
+        "duplicate_columns": []
+      }
+    },
+    {
+      "id": "WX-POST-03",
+      "categoria": "VOLUMEN",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Filas fuente=2,820,371; filas procesadas=2,820,371.",
+      "accion_recomendada": "Investigar pérdidas o duplicaciones de filas durante la transformación.",
+      "metricas": {
+        "source_rows": 2820371,
+        "processed_rows": 2820371,
+        "source_batch_count": 45
+      }
+    },
+    {
+      "id": "WX-POST-03B",
+      "categoria": "BATCHES",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Se encontraron los 45 batches esperados.",
+      "accion_recomendada": "Verificar los archivos de extracción y su nomenclatura.",
+      "metricas": {
+        "missing_batches": [],
+        "unexpected_batches": [],
+        "duplicate_batches": []
+      }
+    },
+    {
+      "id": "WX-POST-04",
+      "categoria": "OBLIGATORIOS",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Los campos obligatorios no contienen nulos.",
+      "accion_recomendada": "Revisar los datos fuente y las conversiones realizadas durante la transformación.",
+      "metricas": {
+        "nulls_by_column": {
+          "location_id": 0,
+          "municipality_name": 0,
+          "latitude": 0,
+          "longitude": 0,
+          "date": 0,
+          "municipality_code": 0,
+          "source_batch_id": 0
+        }
+      }
+    },
+    {
+      "id": "WX-POST-04B",
+      "categoria": "TIPOS",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Las columnas numéricas contienen valores válidos.",
+      "accion_recomendada": "Revisar las conversiones numéricas y los archivos originales.",
+      "metricas": {
+        "invalid_numeric_values": {
+          "temperature_2m_min": 0,
+          "temperature_2m_mean": 0,
+          "temperature_2m_max": 0,
+          "precipitation_sum": 0,
+          "relative_humidity_2m_mean": 0,
+          "et0_fao_evapotranspiration": 0,
+          "location_id": 0,
+          "latitude": 0,
+          "longitude": 0
+        },
+        "non_finite_values": {
+          "temperature_2m_min": 0,
+          "temperature_2m_mean": 0,
+          "temperature_2m_max": 0,
+          "precipitation_sum": 0,
+          "relative_humidity_2m_mean": 0,
+          "et0_fao_evapotranspiration": 0,
+          "location_id": 0,
+          "latitude": 0,
+          "longitude": 0
+        }
+      }
+    },
+    {
+      "id": "WX-POST-05",
+      "categoria": "FECHAS",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Todas las fechas son válidas y pertenecen al periodo 2019-01-01 a 2025-12-31.",
+      "accion_recomendada": "Revisar la normalización de fechas y corregir la causa en la fuente o transformación.",
+      "metricas": {
+        "invalid_dates": 0,
+        "out_of_range_dates": 0,
+        "minimum_date": "2019-01-01T00:00:00",
+        "maximum_date": "2025-12-31T00:00:00"
+      }
+    },
+    {
+      "id": "WX-POST-06",
+      "categoria": "UNICIDAD",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "La clave municipio-fecha es única.",
+      "accion_recomendada": "Investigar las claves duplicadas y normalizar los códigos municipales.",
+      "metricas": {
+        "duplicate_key_rows": 0,
+        "invalid_municipality_codes": 0,
+        "unique_municipalities": 1103
+      }
+    },
+    {
+      "id": "WX-POST-07",
+      "categoria": "TRAZABILIDAD",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Los identificadores de origen usan batch_001 a batch_045.",
+      "accion_recomendada": "Asegurar que source_batch_id se asigne a partir del archivo real que originó cada registro.",
+      "metricas": {
+        "invalid_batch_ids": 0,
+        "out_of_range_batches": 0,
+        "batches_in_output": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "id": "WX-POST-08",
+      "categoria": "DIVIPOLA",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Los códigos municipales coinciden con el catálogo DIVIPOLA.",
+      "accion_recomendada": "Verificar el catálogo DIVIPOLA y la correspondencia de los códigos de municipio.",
+      "metricas": {
+        "catalog_municipalities": 1122,
+        "output_municipalities": 1103,
+        "codes_outside_catalog_count": 0,
+        "codes_outside_catalog_sample": []
+      }
+    },
+    {
+      "id": "WX-POST-09",
+      "categoria": "DOMINIOS_METEOROLOGICOS",
+      "estado": "OK",
+      "riesgo": "ADVERTENCIA",
+      "detalle": "Las reglas de dominio meteorológico se cumplen.",
+      "accion_recomendada": "Investigar los valores anómalos. No corregirlos automáticamente.",
+      "metricas": {
+        "rules": [
+          {
+            "id": "WX-POST-09A",
+            "column": "temperature_2m_min/mean/max",
+            "invalid_rows": 0,
+            "severity": "CRITICA",
+            "rule": "Cuando las tres temperaturas existen: min <= mean <= max."
+          },
+          {
+            "id": "WX-POST-09B",
+            "column": "precipitation_sum",
+            "invalid_rows": 0,
+            "severity": "CRITICA",
+            "rule": "La precipitación no puede ser negativa."
+          },
+          {
+            "id": "WX-POST-09C",
+            "column": "relative_humidity_2m_mean",
+            "invalid_rows": 0,
+            "severity": "CRITICA",
+            "rule": "La humedad relativa debe estar entre 0 y 100."
+          },
+          {
+            "id": "WX-POST-09D",
+            "column": "et0_fao_evapotranspiration",
+            "invalid_rows": 0,
+            "severity": "ADVERTENCIA",
+            "rule": "ET0 negativa requiere revisión."
+          }
+        ]
+      }
+    },
+    {
+      "id": "WX-POST-10",
+      "categoria": "NULOS_METEOROLOGICOS",
+      "estado": "OK",
+      "riesgo": "ADVERTENCIA",
+      "detalle": "No se encontraron nulos meteorológicos.",
+      "accion_recomendada": "Evaluar los nulos según los requisitos de consumo. No imputar datos en el validador.",
+      "metricas": {
+        "nulls_by_column": {
+          "temperature_2m_min": 0,
+          "temperature_2m_mean": 0,
+          "temperature_2m_max": 0,
+          "precipitation_sum": 0,
+          "relative_humidity_2m_mean": 0,
+          "et0_fao_evapotranspiration": 0
+        },
+        "rows_without_weather_values": 0
+      }
+    },
+    {
+      "id": "WX-POST-11",
+      "categoria": "COBERTURA_TEMPORAL",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Los 1103 territorios tienen 2557 días en el periodo esperado.",
+      "accion_recomendada": "Revisar batches, fechas y claves duplicadas.",
+      "metricas": {
+        "municipalities_found": 1103,
+        "expected_municipalities": 1103,
+        "expected_days_per_municipality": 2557,
+        "municipalities_wrong_row_count": 0,
+        "municipalities_wrong_distinct_dates": 0,
+        "municipalities_wrong_start_date": 0,
+        "municipalities_wrong_end_date": 0,
+        "problematic_municipality_sample": []
+      }
+    },
+    {
+      "id": "WX-POST-12",
+      "categoria": "CONSISTENCIA_FUENTE_RESULTADO",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Se compararon 45 batches sin diferencias.",
+      "accion_recomendada": "Revisar la conservación de valores y la asignación de source_batch_id.",
+      "metricas": {
+        "batches_compared": 45,
+        "batches_with_errors": []
+      }
+    },
+    {
+      "id": "WX-POST-13",
+      "categoria": "GREAT_EXPECTATIONS",
+      "estado": "OK",
+      "riesgo": "CRITICA",
+      "detalle": "Las expectativas básicas de Great Expectations se cumplieron.",
+      "accion_recomendada": "Verificar la ejecución de GX y corregir las expectativas incumplidas.",
+      "metricas": {}
+    }
+  ],
+  "metrics": {
+    "processed_rows": 2820371,
+    "processed_columns": 13,
+    "unique_municipalities": 1103,
+    "source_batches_found": 45,
+    "source_rows": 2820371,
+    "minimum_date": "2019-01-01T00:00:00",
+    "maximum_date": "2025-12-31T00:00:00"
+  },
+  "great_expectations": {
+    "executed": true,
+    "success": true,
+    "detail": "Expectativas de Great Expectations ejecutadas.",
+    "expectations": [
+      {
+        "type": "expect_column_values_to_not_be_null",
+        "success": true,
+        "result": {
+          "element_count": 2820371,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        }
+      },
+      {
+        "type": "expect_column_values_to_not_be_null",
+        "success": true,
+        "result": {
+          "element_count": 2820371,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        }
+      },
+      {
+        "type": "expect_column_values_to_not_be_null",
+        "success": true,
+        "result": {
+          "element_count": 2820371,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        }
+      }
+    ]
+  },
+  "status": "APROBADO",
+  "finished_at_utc": "2026-10-23T00:31:25+00:00",
+  "report_path": "/opt/airflow/project/outputs/validation/weather_processed_validation_20261023T003126Z.json",
+  "report_generated_at_utc": "2026-10-23T00:31:26+00:00"
+}

@@ -13,7 +13,7 @@ import great_expectations as gx
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
 ARCHIVO_STAGING = (
-    PROJECT_ROOT / "data" / "staging" / "eva_agricola_staging.csv"
+    PROJECT_ROOT / "data" / "raw" / "eva_agricola_raw.csv"
 )
 
 CARPETA_VALIDACION = PROJECT_ROOT / "data" / "validation"
@@ -21,24 +21,24 @@ CARPETA_VALIDACION = PROJECT_ROOT / "data" / "validation"
 ARCHIVO_REPORTE = CARPETA_VALIDACION / "validacion_staging.csv"
 
 COLUMNAS_ESPERADAS = [
-    "codigo_departamento",
-    "departamento",
-    "codigo_municipio",
-    "municipio",
-    "grupo_cultivo",
-    "subgrupo",
-    "cultivo",
-    "desagregacion_cultivo",
-    "anio",
-    "periodo",
-    "area_sembrada",
-    "area_cosechada",
-    "produccion",
-    "rendimiento",
-    "ciclo_cultivo",
-    "estado_fisico_cultivo",
-    "codigo_cultivo",
-    "nombre_cientifico",
+    "Código Dane departamento",
+    "Departamento",
+    "Código Dane municipio",
+    "Municipio",
+    "Grupo cultivo",
+    "Subgrupo",
+    "Cultivo",
+    "Desagregación cultivo",
+    "Año",
+    "Periodo",
+    "Área sembrada",
+    "Área cosechada",
+    "Producción",
+    "Rendimiento",
+    "Ciclo del cultivo",
+    "Estado físico del cultivo",
+    "Código del cultivo",
+    "Nombre científico del cultivo",
 ]
 
 COLUMNAS_TEXTO = [

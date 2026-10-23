@@ -1,0 +1,70 @@
+{"timestamp":"2026-10-23T00:31:29.888684Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 534. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-10-23T00:31:29.921539Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-23T00:31:29.924695Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_ods2.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:31:30.080230Z","level":"info","event":"Ejecutando comando: ['/usr/python/bin/python3.12', '/opt/airflow/project/src/load/load_weather.py']","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":25}
+{"timestamp":"2026-10-23T00:31:32.667475Z","level":"error","event":"2026-10-23 00:31:32,667 | INFO | Iniciando carga de Weather.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:31:48.651132Z","level":"error","event":"2026-10-23 00:31:48,649 | INFO | Archivo leído: 2820371 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:31:51.592345Z","level":"error","event":"2026-10-23 00:31:51,592 | INFO | Municipios de Weather encontrados en la dimensión compartida: 1103","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:31:52.203682Z","level":"error","event":"2026-10-23 00:31:52,203 | INFO | Dimensión temporal procesada: 2557 fechas.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:31:56.649206Z","level":"error","event":"2026-10-23 00:31:56,648 | INFO | Hechos procesados: 50000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:00.778449Z","level":"error","event":"2026-10-23 00:32:00,773 | INFO | Hechos procesados: 100000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:06.342316Z","level":"error","event":"2026-10-23 00:32:06,341 | INFO | Hechos procesados: 150000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:13.679464Z","level":"error","event":"2026-10-23 00:32:13,678 | INFO | Hechos procesados: 200000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:17.687730Z","level":"error","event":"2026-10-23 00:32:17,687 | INFO | Hechos procesados: 250000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:22.192236Z","level":"error","event":"2026-10-23 00:32:22,191 | INFO | Hechos procesados: 300000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:26.388546Z","level":"error","event":"2026-10-23 00:32:26,388 | INFO | Hechos procesados: 350000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:31.863388Z","level":"error","event":"2026-10-23 00:32:31,863 | INFO | Hechos procesados: 400000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:36.223252Z","level":"error","event":"2026-10-23 00:32:36,222 | INFO | Hechos procesados: 450000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:41.212979Z","level":"error","event":"2026-10-23 00:32:41,212 | INFO | Hechos procesados: 500000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:47.750803Z","level":"error","event":"2026-10-23 00:32:47,750 | INFO | Hechos procesados: 550000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:53.984862Z","level":"error","event":"2026-10-23 00:32:53,984 | INFO | Hechos procesados: 600000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:32:57.639337Z","level":"error","event":"2026-10-23 00:32:57,639 | INFO | Hechos procesados: 650000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:02.586063Z","level":"error","event":"2026-10-23 00:33:02,583 | INFO | Hechos procesados: 700000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:07.855546Z","level":"error","event":"2026-10-23 00:33:07,855 | INFO | Hechos procesados: 750000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:13.559790Z","level":"error","event":"2026-10-23 00:33:13,559 | INFO | Hechos procesados: 800000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:17.155185Z","level":"error","event":"2026-10-23 00:33:17,154 | INFO | Hechos procesados: 850000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:21.293511Z","level":"error","event":"2026-10-23 00:33:21,293 | INFO | Hechos procesados: 900000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:27.044024Z","level":"error","event":"2026-10-23 00:33:27,043 | INFO | Hechos procesados: 950000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:33.183408Z","level":"error","event":"2026-10-23 00:33:33,183 | INFO | Hechos procesados: 1000000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:37.669187Z","level":"error","event":"2026-10-23 00:33:37,668 | INFO | Hechos procesados: 1050000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:42.808139Z","level":"error","event":"2026-10-23 00:33:42,807 | INFO | Hechos procesados: 1100000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:48.070585Z","level":"error","event":"2026-10-23 00:33:48,070 | INFO | Hechos procesados: 1150000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:52.506825Z","level":"error","event":"2026-10-23 00:33:52,506 | INFO | Hechos procesados: 1200000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:33:56.311202Z","level":"error","event":"2026-10-23 00:33:56,310 | INFO | Hechos procesados: 1250000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:00.455319Z","level":"error","event":"2026-10-23 00:34:00,455 | INFO | Hechos procesados: 1300000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:07.059984Z","level":"error","event":"2026-10-23 00:34:07,059 | INFO | Hechos procesados: 1350000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:13.511905Z","level":"error","event":"2026-10-23 00:34:13,511 | INFO | Hechos procesados: 1400000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:17.942194Z","level":"error","event":"2026-10-23 00:34:17,941 | INFO | Hechos procesados: 1450000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:24.028845Z","level":"error","event":"2026-10-23 00:34:24,028 | INFO | Hechos procesados: 1500000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:28.515880Z","level":"error","event":"2026-10-23 00:34:28,515 | INFO | Hechos procesados: 1550000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:33.316875Z","level":"error","event":"2026-10-23 00:34:33,316 | INFO | Hechos procesados: 1600000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:37.304571Z","level":"error","event":"2026-10-23 00:34:37,304 | INFO | Hechos procesados: 1650000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:42.800780Z","level":"error","event":"2026-10-23 00:34:42,800 | INFO | Hechos procesados: 1700000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:48.801575Z","level":"error","event":"2026-10-23 00:34:48,801 | INFO | Hechos procesados: 1750000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:53.959862Z","level":"error","event":"2026-10-23 00:34:53,959 | INFO | Hechos procesados: 1800000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:34:57.950770Z","level":"error","event":"2026-10-23 00:34:57,950 | INFO | Hechos procesados: 1850000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:03.549925Z","level":"error","event":"2026-10-23 00:35:03,549 | INFO | Hechos procesados: 1900000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:11.621661Z","level":"error","event":"2026-10-23 00:35:11,621 | INFO | Hechos procesados: 1950000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:16.548781Z","level":"error","event":"2026-10-23 00:35:16,548 | INFO | Hechos procesados: 2000000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:21.689545Z","level":"error","event":"2026-10-23 00:35:21,689 | INFO | Hechos procesados: 2050000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:28.040363Z","level":"error","event":"2026-10-23 00:35:28,040 | INFO | Hechos procesados: 2100000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:33.437536Z","level":"error","event":"2026-10-23 00:35:33,437 | INFO | Hechos procesados: 2150000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:37.574445Z","level":"error","event":"2026-10-23 00:35:37,574 | INFO | Hechos procesados: 2200000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:43.806119Z","level":"error","event":"2026-10-23 00:35:43,805 | INFO | Hechos procesados: 2250000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:35:57.924477Z","level":"error","event":"2026-10-23 00:35:57,921 | INFO | Hechos procesados: 2300000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:36:22.261093Z","level":"error","event":"2026-10-23 00:36:22,249 | INFO | Hechos procesados: 2350000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:36:48.169041Z","level":"error","event":"2026-10-23 00:36:48,168 | INFO | Hechos procesados: 2400000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:00.177352Z","level":"error","event":"2026-10-23 00:37:00,172 | INFO | Hechos procesados: 2450000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:11.099617Z","level":"error","event":"2026-10-23 00:37:11,097 | INFO | Hechos procesados: 2500000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:16.204175Z","level":"error","event":"2026-10-23 00:37:16,203 | INFO | Hechos procesados: 2550000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:21.074877Z","level":"error","event":"2026-10-23 00:37:21,074 | INFO | Hechos procesados: 2600000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:32.946268Z","level":"error","event":"2026-10-23 00:37:32,945 | INFO | Hechos procesados: 2650000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:39.253795Z","level":"error","event":"2026-10-23 00:37:39,253 | INFO | Hechos procesados: 2700000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:45.698445Z","level":"error","event":"2026-10-23 00:37:45,698 | INFO | Hechos procesados: 2750000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:50.354412Z","level":"error","event":"2026-10-23 00:37:50,354 | INFO | Hechos procesados: 2800000 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:51.903012Z","level":"error","event":"2026-10-23 00:37:51,902 | INFO | Hechos procesados: 2820371 registros.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:53.259896Z","level":"error","event":"2026-10-23 00:37:53,258 | INFO | Conteos dentro de la transacción: geografía=1103, fechas=2557, hechos=2820371.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:53.268886Z","level":"error","event":"2026-10-23 00:37:53,263 | INFO | Transacción confirmada correctamente.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:53.273827Z","level":"error","event":"2026-10-23 00:37:53,263 | INFO | Carga de Weather finalizada.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:37:53.733072Z","level":"info","event":"Script finalizado correctamente: src/load/load_weather.py","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":35}
+{"timestamp":"2026-10-23T00:37:53.734145Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}

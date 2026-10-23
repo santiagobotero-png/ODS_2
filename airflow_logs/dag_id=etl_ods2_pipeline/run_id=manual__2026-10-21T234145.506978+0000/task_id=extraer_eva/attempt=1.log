@@ -1,0 +1,11 @@
+{"timestamp":"2026-10-21T23:41:46.850036Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 202. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-10-21T23:41:46.921313Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-21T23:41:46.927067Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_ods2.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-21T23:41:47.289500Z","level":"info","event":"Ejecutando comando: ['/usr/python/bin/python3.12', '/opt/airflow/project/src/extraction/eva.py']","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":26}
+{"timestamp":"2026-10-21T23:42:06.127285Z","level":"info","event":"Iniciando extracción del dataset EVA...","logger":"task.stdout"}
+{"timestamp":"2026-10-21T23:42:06.129259Z","level":"info","event":"Registros extraídos: 166,732","logger":"task.stdout"}
+{"timestamp":"2026-10-21T23:42:06.133813Z","level":"info","event":"Columnas extraídas: 18","logger":"task.stdout"}
+{"timestamp":"2026-10-21T23:42:06.138451Z","level":"info","event":"Archivo fuente: /opt/airflow/project/data/source/Evaluaciones_Agropecuarias_Municipales_–_EVA._2019_-_2025._Base_Agrícola_20260905.csv","logger":"task.stdout"}
+{"timestamp":"2026-10-21T23:42:06.143192Z","level":"info","event":"Archivo RAW generado: /opt/airflow/project/data/raw/eva_agricola_raw.csv","logger":"task.stdout"}
+{"timestamp":"2026-10-21T23:42:06.585814Z","level":"info","event":"Script finalizado correctamente: src/extraction/eva.py","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":36}
+{"timestamp":"2026-10-21T23:42:06.586565Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}

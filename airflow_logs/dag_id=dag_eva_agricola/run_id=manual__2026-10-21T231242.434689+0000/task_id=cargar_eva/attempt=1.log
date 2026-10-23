@@ -1,0 +1,18 @@
+{"timestamp":"2026-10-21T23:15:51.913178Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 145. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-10-21T23:15:51.938735Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-21T23:15:51.943648Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_eva.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-21T23:15:52.058364Z","level":"info","event":"Iniciando script: /opt/airflow/project/src/load/load_eva.py","logger":"unusual_prefix_dde36cf76cfb83813b0e23d5562a985d97ab90a0_dag_eva","filename":"dag_eva.py","lineno":37}
+{"timestamp":"2026-10-21T23:15:55.076225Z","level":"error","event":"2026-10-21 23:15:55,075 | INFO | Archivo leído: eva_agricola_processed.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.077319Z","level":"error","event":"2026-10-21 23:15:55,076 | INFO | Registros de entrada: 166,732","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.179102Z","level":"error","event":"2026-10-21 23:15:55,178 | INFO | Preparando esquema y tablas EVA...","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.223196Z","level":"error","event":"2026-10-21 23:15:55,222 | INFO | Cargando dimensión geográfica...","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.490146Z","level":"error","event":"2026-10-21 23:15:55,489 | INFO | Cargando dimensión de cultivos...","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.557340Z","level":"error","event":"2026-10-21 23:15:55,557 | INFO | Cargando dimensión temporal...","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.658132Z","level":"error","event":"2026-10-21 23:15:55,657 | INFO | Definición de eva.dim_tiempo: [('sk_tiempo', 'integer', None), ('periodo', 'character varying', 10), ('anio', 'smallint', None), ('tipo_periodo', 'character varying', 20), ('semestre', 'character varying', 1), ('fecha_inicio', 'date', None), ('fecha_fin', 'date', None)]","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.658784Z","level":"error","event":"2026-10-21 23:15:55,658 | INFO | Insertando 21 períodos; muestra: [('2021A', 2021, 'SEMESTRAL', 'A'), ('2021B', 2021, 'SEMESTRAL', 'B'), ('2022A', 2022, 'SEMESTRAL', 'A'), ('2022B', 2022, 'SEMESTRAL', 'B'), ('2023A', 2023, 'SEMESTRAL', 'A')]","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.663894Z","level":"error","event":"2026-10-21 23:15:55,663 | INFO | Dimensión temporal cargada: 21 períodos.","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:15:55.664632Z","level":"error","event":"2026-10-21 23:15:55,663 | INFO | Cargando hechos agrícolas...","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:16:23.538107Z","level":"error","event":"2026-10-21 23:16:23,537 | INFO | Hechos procesados: 166,732","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:16:23.596728Z","level":"error","event":"2026-10-21 23:16:23,596 | INFO | Carga EVA completada correctamente.","logger":"task.stderr"}
+{"timestamp":"2026-10-21T23:16:23.782611Z","level":"info","event":"Script finalizado correctamente: /opt/airflow/project/src/load/load_eva.py","logger":"unusual_prefix_dde36cf76cfb83813b0e23d5562a985d97ab90a0_dag_eva","filename":"dag_eva.py","lineno":45}
+{"timestamp":"2026-10-21T23:16:23.783067Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}

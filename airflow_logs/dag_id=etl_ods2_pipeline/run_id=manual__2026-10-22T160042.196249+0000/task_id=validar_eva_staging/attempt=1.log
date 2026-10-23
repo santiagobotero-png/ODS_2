@@ -1,0 +1,58 @@
+{"timestamp":"2026-10-22T16:01:02.958841Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 359. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-10-22T16:01:03.024303Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-22T16:01:03.029929Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_ods2.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-22T16:01:03.194859Z","level":"info","event":"Ejecutando comando: ['/usr/python/bin/python3.12', '/opt/airflow/project/src/validation/validate_eva.py']","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":25}
+{"timestamp":"2026-10-22T16:01:33.467689Z","level":"error","event":"2026-10-22 16:01:33,467 | INFO | OK | Existencia del archivo | Archivo encontrado: /opt/airflow/project/data/raw/eva_agricola_raw.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:35.557773Z","level":"error","event":"2026-10-22 16:01:35,545 | INFO | Registros leídos: 166,732","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:35.558851Z","level":"error","event":"2026-10-22 16:01:35,549 | INFO | Columnas leídas: 18","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:35.561227Z","level":"error","event":"2026-10-22 16:01:35,554 | INFO | OK | Cantidad de registros | Se encontraron 166,732 registros, coincidiendo con el volumen de referencia.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:35.563128Z","level":"error","event":"2026-10-22 16:01:35,554 | INFO | OK | Columnas esperadas | Las 18 columnas coinciden en nombre y orden.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:35.564085Z","level":"error","event":"2026-10-22 16:01:35,555 | INFO | OK | Tipos de datos | Códigos y dimensiones conservados como texto; año entero y métricas numéricas.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:37.041221Z","level":"error","event":"2026-10-22 16:01:37,040 | INFO | OK | Nulos y vacíos | No se encontraron nulos ni cadenas vacías.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:37.041871Z","level":"error","event":"2026-10-22 16:01:37,041 | INFO | OK | Códigos geográficos y de cultivo | Los códigos presentes cumplen las reglas estructurales aplicadas.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:37.042689Z","level":"error","event":"2026-10-22 16:01:37,041 | INFO | Ejecutando expectativas de Great Expectations.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:37.044043Z","level":"error","event":"2026-10-22 16:01:37,043 | INFO | Created temporary directory '/tmp/tmpncrg3pty' for ephemeral docs site","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:37.045055Z","level":"error","event":"2026-10-22 16:01:37,044 | INFO | Loading 'datasources' ->","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:37.045762Z","level":"error","event":"[]","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:37.815494Z","level":"error","event":"2026-10-22 16:01:37,815 | INFO | \t18 expectation(s) included in expectation_suite.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:37.980153Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.981830Z","level":"info","event":"VALIDACIÓN DEL DATASET STAGING EVA","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.984122Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.985475Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.986427Z","level":"info","event":"[1/10] Verificando archivo.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.992160Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.993295Z","level":"info","event":"[2/10] Leyendo dataset staging.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.996766Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.998601Z","level":"info","event":"[3/10] Validando volumen.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:37.999437Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.001391Z","level":"info","event":"[4/10] Validando estructura.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.002300Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.004324Z","level":"info","event":"[5/10] Validando tipos de datos.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.007316Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.012113Z","level":"info","event":"[6/10] Validando nulos y vacíos.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.016158Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.016922Z","level":"info","event":"[7/10] Validando códigos.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.017704Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.018388Z","level":"info","event":"[8/10] Validando año y periodo.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.020769Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.022496Z","level":"info","event":"[9/10] Validando granularidad.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.023281Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.024265Z","level":"info","event":"[10/10] Validando métricas y semántica.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.025514Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.027289Z","level":"info","event":"Ejecutando Great Expectations.","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.305301Z","level":"error","event":"\rCalculating Metrics:   0%|          | 0/57 [00:00<?, ?it/s]\rCalculating Metrics:   0%|          | 0/57 [00:00<?, ?it/s]\rCalculating Metrics:   4%|▎         | 2/57 [00:00<00:00, 1621.30it/s]\rCalculating Metrics:   4%|▎         | 2/57 [00:00<00:00, 987.48it/s] \rCalculating Metrics:   5%|▌         | 3/57 [00:00<00:00, 1229.64it/s]\rCalculating Metrics:   5%|▌         | 3/57 [00:00<00:00, 975.42it/s] \rCalculating Metrics:  37%|███▋      | 21/57 [00:00<00:00, 67.45it/s]\rCalculating Metrics:  37%|███▋      | 21/57 [00:00<00:00, 67.45it/s]\rCalculating Metrics:  37%|███▋      | 21/57 [00:00<00:00, 67.45it/s]\rCalculating Metrics: 100%|██████████| 57/57 [00:00<00:00, 67.45it/s]\rCalculating Metrics: 100%|██████████| 57/57 [00:00<00:00, 67.45it/s]\rCalculating Metrics: 100%|██████████| 57/57 [00:00<00:00, 67.45it/s]\rCalculating Metrics: 100%|██████████| 57/57 [00:00<00:00, 175.57it/s]","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:38.358724Z","level":"error","event":"2026-10-22 16:01:38,358 | INFO | OK | Expectation Suite | GX ejecutó correctamente las expectativas definidas para 18 columnas.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:38.359656Z","level":"error","event":"2026-10-22 16:01:38,358 | INFO | APROBADO | Decisión de calidad del staging | Resultado calculado a partir de los controles ejecutados.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:38.407161Z","level":"error","event":"2026-10-22 16:01:38,406 | INFO | Reporte generado: /opt/airflow/project/data/validation/validacion_staging.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-22T16:01:38.408127Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.409229Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.409941Z","level":"info","event":"RESUMEN DE VALIDACIÓN","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.410717Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.411451Z","level":"info","event":"OK                  : 7","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.412222Z","level":"info","event":"APROBADO            : 1","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.413695Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.415089Z","level":"info","event":"Estado final: APROBADO","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.418764Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:38.420223Z","level":"info","event":"VALIDACIÓN FINALIZADA","logger":"task.stdout"}
+{"timestamp":"2026-10-22T16:01:39.737930Z","level":"info","event":"Script finalizado correctamente: src/validation/validate_eva.py","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":35}
+{"timestamp":"2026-10-22T16:01:39.738232Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}

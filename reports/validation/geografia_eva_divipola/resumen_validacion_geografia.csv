@@ -1,0 +1,13 @@
+﻿categoria,validacion,cantidad
+EVA,registros_totales,166732
+EVA,codigos_municipales_distintos_validos,1103
+EVA,registros_con_codigo_invalido,0
+DIVIPOLA,registros_totales,1122
+DIVIPOLA,codigos_municipales_distintos_validos,1122
+DIVIPOLA,registros_con_codigo_invalido,0
+CRUCE,codigos_coincidentes,1103
+CRUCE,codigos_eva_ausentes_en_divipola,0
+CRUCE,codigos_divipola_ausentes_en_eva,19
+DIVIPOLA,codigos_duplicados,0
+DIVIPOLA,municipios_eva_con_atributos_faltantes,0
+DIVIPOLA,municipios_eva_con_coordenadas_invalidas,0

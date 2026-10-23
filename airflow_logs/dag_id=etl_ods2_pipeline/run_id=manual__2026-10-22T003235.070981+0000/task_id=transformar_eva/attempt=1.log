@@ -1,0 +1,59 @@
+{"timestamp":"2026-10-22T00:33:19.039737Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 300. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-10-22T00:33:19.065235Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-22T00:33:19.068256Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_ods2.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-22T00:33:19.184207Z","level":"info","event":"Ejecutando comando: ['/usr/python/bin/python3.12', '/opt/airflow/project/src/transformation/transformacion_eva.py']","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":25}
+{"timestamp":"2026-10-22T00:33:20.664771Z","level":"error","event":"2026-10-22 00:33:20,664 | INFO | Leyendo archivo original.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:22.090604Z","level":"error","event":"2026-10-22 00:33:22,090 | INFO | Registros de entrada: 166,732","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:22.091735Z","level":"error","event":"2026-10-22 00:33:22,090 | INFO | Columnas de entrada: 18","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:22.252932Z","level":"error","event":"2026-10-22 00:33:22,252 | INFO | Normalizando identificadores.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:24.181511Z","level":"error","event":"2026-10-22 00:33:24,179 | INFO | Estandarizando campos de texto.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:25.641550Z","level":"error","event":"2026-10-22 00:33:25,639 | INFO | Convirtiendo métricas numéricas.","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:28.849923Z","level":"error","event":"2026-10-22 00:33:28,849 | INFO | Años no convertibles a enteros: 0","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:28.878472Z","level":"error","event":"2026-10-22 00:33:28,878 | INFO | Registros de entrada y salida coinciden: 166,732","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:36.263910Z","level":"error","event":"2026-10-22 00:33:36,263 | INFO | Archivo generado: /opt/airflow/project/data/processed/eva_agricola_processed.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:36.264803Z","level":"error","event":"2026-10-22 00:33:36,263 | INFO | Registros exportados: 166,732","logger":"task.stderr"}
+{"timestamp":"2026-10-22T00:33:36.271663Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.273801Z","level":"info","event":"TRANSFORMACIÓN DEL DATASET EVA","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.275276Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.276103Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.276809Z","level":"info","event":"Origen:  /opt/airflow/project/data/source/Evaluaciones_Agropecuarias_Municipales_–_EVA._2019_-_2025._Base_Agrícola_20260905.csv","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.277555Z","level":"info","event":"Destino: /opt/airflow/project/data/processed/eva_agricola_processed.csv","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.278260Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.278990Z","level":"info","event":"--- Conversión de métricas ---","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.279637Z","level":"info","event":"area_sembrada       : 0 conversiones fallidas","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.280269Z","level":"info","event":"area_cosechada      : 0 conversiones fallidas","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.280938Z","level":"info","event":"produccion          : 0 conversiones fallidas","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.281968Z","level":"info","event":"rendimiento         : 0 conversiones fallidas","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.283123Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.284898Z","level":"info","event":"--- Validación estructural de códigos ---","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.286598Z","level":"info","event":"Departamentos inválidos: 0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.289173Z","level":"info","event":"Municipios inválidos:    0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.290233Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.290989Z","level":"info","event":"--- Consistencia año / periodo ---","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.291651Z","level":"info","event":"Inconsistencias temporales: 0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.292396Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.293991Z","level":"info","event":"--- Granularidad ---","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.296548Z","level":"info","event":"Registros:                    166,732","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.297945Z","level":"info","event":"Claves únicas:                166,732","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.298967Z","level":"info","event":"Claves duplicadas excedentes: 0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.300374Z","level":"info","event":"Filas en grupos duplicados:   0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.301206Z","level":"info","event":"Claves incompletas:           0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.302045Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.302750Z","level":"info","event":"--- Valores negativos ---","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.303513Z","level":"info","event":"area_sembrada       : 0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.304198Z","level":"info","event":"area_cosechada      : 0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.304863Z","level":"info","event":"produccion          : 0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.305612Z","level":"info","event":"rendimiento         : 0","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.306286Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.307012Z","level":"info","event":"--- Condiciones semánticas informativas ---","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.307706Z","level":"info","event":"Área cosechada > área sembrada: 13,208","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.308369Z","level":"info","event":"Área sembrada = 0 y cosechada > 0: 3,003","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.309066Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.309795Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.310309Z","level":"info","event":"TRANSFORMACIÓN FINALIZADA","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.311001Z","level":"info","event":"======================================================================","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.311696Z","level":"info","event":"Archivo generado: /opt/airflow/project/data/processed/eva_agricola_processed.csv","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.312339Z","level":"info","event":"Registros: 166,732","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.313088Z","level":"info","event":"Columnas: 18","logger":"task.stdout"}
+{"timestamp":"2026-10-22T00:33:36.480008Z","level":"info","event":"Script finalizado correctamente: src/transformation/transformacion_eva.py","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":35}
+{"timestamp":"2026-10-22T00:33:36.480564Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}

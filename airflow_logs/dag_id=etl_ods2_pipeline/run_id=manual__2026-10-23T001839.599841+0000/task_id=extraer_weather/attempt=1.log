@@ -1,0 +1,105 @@
+{"timestamp":"2026-10-23T00:18:49.111355Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 418. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-10-23T00:18:49.424937Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-23T00:18:49.453502Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_ods2.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:18:50.565391Z","level":"info","event":"Ejecutando comando: ['/usr/python/bin/python3.12', '/opt/airflow/project/src/extraction/open_meteo.py']","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":25}
+{"timestamp":"2026-10-23T00:18:56.880420Z","level":"error","event":"/home/airflow/.local/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.5) doesn't match a supported version!","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:18:56.882107Z","level":"error","event":"  warnings.warn(","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:02.998763Z","level":"error","event":"2026-10-23 00:19:02,996 | INFO | Catalog loaded: 1103 territories, 45 batches.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:03.047065Z","level":"error","event":"2026-10-23 00:19:03,044 | INFO | Project root: /opt/airflow/project","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:03.048604Z","level":"error","event":"2026-10-23 00:19:03,046 | INFO | Output directory: /opt/airflow/project/data/raw/open_meteo_daily_batches","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:03.049565Z","level":"error","event":"2026-10-23 00:19:03,047 | INFO | Date range: 2019-01-01 to 2025-12-31","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:03.051325Z","level":"error","event":"2026-10-23 00:19:03,047 | INFO | Days per territory: 2557","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:03.052646Z","level":"error","event":"2026-10-23 00:19:03,047 | INFO | Selected batches: 001 through 045","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:03.057514Z","level":"error","event":"2026-10-23 00:19:03,056 | INFO | Batch 001: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:04.801049Z","level":"error","event":"2026-10-23 00:19:04,800 | INFO | weather_batch_001.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:04.814748Z","level":"error","event":"2026-10-23 00:19:04,813 | INFO | Batch 002: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:06.059857Z","level":"error","event":"2026-10-23 00:19:06,057 | INFO | weather_batch_002.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:06.079981Z","level":"error","event":"2026-10-23 00:19:06,079 | INFO | Batch 003: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:07.182117Z","level":"error","event":"2026-10-23 00:19:07,178 | INFO | weather_batch_003.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:07.258199Z","level":"error","event":"2026-10-23 00:19:07,206 | INFO | Batch 004: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:08.603222Z","level":"error","event":"2026-10-23 00:19:08,590 | INFO | weather_batch_004.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:08.622360Z","level":"error","event":"2026-10-23 00:19:08,621 | INFO | Batch 005: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:09.876305Z","level":"error","event":"2026-10-23 00:19:09,875 | INFO | weather_batch_005.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:09.883538Z","level":"error","event":"2026-10-23 00:19:09,883 | INFO | Batch 006: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:10.917630Z","level":"error","event":"2026-10-23 00:19:10,917 | INFO | weather_batch_006.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:10.927745Z","level":"error","event":"2026-10-23 00:19:10,927 | INFO | Batch 007: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:12.771140Z","level":"error","event":"2026-10-23 00:19:12,767 | INFO | weather_batch_007.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:12.910055Z","level":"error","event":"2026-10-23 00:19:12,786 | INFO | Batch 008: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:14.632005Z","level":"error","event":"2026-10-23 00:19:14,631 | INFO | weather_batch_008.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:14.643282Z","level":"error","event":"2026-10-23 00:19:14,642 | INFO | Batch 009: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:15.603167Z","level":"error","event":"2026-10-23 00:19:15,601 | INFO | weather_batch_009.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:15.625168Z","level":"error","event":"2026-10-23 00:19:15,622 | INFO | Batch 010: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:16.919695Z","level":"error","event":"2026-10-23 00:19:16,919 | INFO | weather_batch_010.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:16.929387Z","level":"error","event":"2026-10-23 00:19:16,928 | INFO | Batch 011: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:18.496804Z","level":"error","event":"2026-10-23 00:19:18,492 | INFO | weather_batch_011.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:18.722091Z","level":"error","event":"2026-10-23 00:19:18,501 | INFO | Batch 012: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:20.115212Z","level":"error","event":"2026-10-23 00:19:20,106 | INFO | weather_batch_012.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:20.121500Z","level":"error","event":"2026-10-23 00:19:20,117 | INFO | Batch 013: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:21.204945Z","level":"error","event":"2026-10-23 00:19:21,204 | INFO | weather_batch_013.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:21.213485Z","level":"error","event":"2026-10-23 00:19:21,213 | INFO | Batch 014: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:22.595208Z","level":"error","event":"2026-10-23 00:19:22,593 | INFO | weather_batch_014.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:22.600523Z","level":"error","event":"2026-10-23 00:19:22,600 | INFO | Batch 015: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:23.983128Z","level":"error","event":"2026-10-23 00:19:23,981 | INFO | weather_batch_015.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:24.059185Z","level":"error","event":"2026-10-23 00:19:23,993 | INFO | Batch 016: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:24.968011Z","level":"error","event":"2026-10-23 00:19:24,967 | INFO | weather_batch_016.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:24.978090Z","level":"error","event":"2026-10-23 00:19:24,977 | INFO | Batch 017: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:26.011806Z","level":"error","event":"2026-10-23 00:19:26,011 | INFO | weather_batch_017.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:26.015488Z","level":"error","event":"2026-10-23 00:19:26,015 | INFO | Batch 018: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:26.889987Z","level":"error","event":"2026-10-23 00:19:26,889 | INFO | weather_batch_018.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:26.896238Z","level":"error","event":"2026-10-23 00:19:26,895 | INFO | Batch 019: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:28.139175Z","level":"error","event":"2026-10-23 00:19:28,132 | INFO | weather_batch_019.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:28.148288Z","level":"error","event":"2026-10-23 00:19:28,143 | INFO | Batch 020: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:30.307197Z","level":"error","event":"2026-10-23 00:19:30,305 | INFO | weather_batch_020.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:30.405256Z","level":"error","event":"2026-10-23 00:19:30,325 | INFO | Batch 021: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:31.943295Z","level":"error","event":"2026-10-23 00:19:31,938 | INFO | weather_batch_021.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:31.959012Z","level":"error","event":"2026-10-23 00:19:31,958 | INFO | Batch 022: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:33.547250Z","level":"error","event":"2026-10-23 00:19:33,544 | INFO | weather_batch_022.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:33.556368Z","level":"error","event":"2026-10-23 00:19:33,554 | INFO | Batch 023: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:35.083668Z","level":"error","event":"2026-10-23 00:19:35,083 | INFO | weather_batch_023.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:35.093440Z","level":"error","event":"2026-10-23 00:19:35,092 | INFO | Batch 024: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:36.393551Z","level":"error","event":"2026-10-23 00:19:36,392 | INFO | weather_batch_024.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:36.452032Z","level":"error","event":"2026-10-23 00:19:36,398 | INFO | Batch 025: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:37.508369Z","level":"error","event":"2026-10-23 00:19:37,505 | INFO | weather_batch_025.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:37.524409Z","level":"error","event":"2026-10-23 00:19:37,517 | INFO | Batch 026: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:39.735584Z","level":"error","event":"2026-10-23 00:19:39,732 | INFO | weather_batch_026.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:39.741850Z","level":"error","event":"2026-10-23 00:19:39,741 | INFO | Batch 027: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:40.676725Z","level":"error","event":"2026-10-23 00:19:40,676 | INFO | weather_batch_027.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:40.682297Z","level":"error","event":"2026-10-23 00:19:40,681 | INFO | Batch 028: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:42.264443Z","level":"error","event":"2026-10-23 00:19:42,259 | INFO | weather_batch_028.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:42.351887Z","level":"error","event":"2026-10-23 00:19:42,278 | INFO | Batch 029: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:44.132359Z","level":"error","event":"2026-10-23 00:19:44,128 | INFO | weather_batch_029.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:44.135896Z","level":"error","event":"2026-10-23 00:19:44,135 | INFO | Batch 030: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:45.354967Z","level":"error","event":"2026-10-23 00:19:45,354 | INFO | weather_batch_030.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:45.358954Z","level":"error","event":"2026-10-23 00:19:45,358 | INFO | Batch 031: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:46.734865Z","level":"error","event":"2026-10-23 00:19:46,734 | INFO | weather_batch_031.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:46.741030Z","level":"error","event":"2026-10-23 00:19:46,740 | INFO | Batch 032: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:47.961849Z","level":"error","event":"2026-10-23 00:19:47,956 | INFO | weather_batch_032.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:48.204655Z","level":"error","event":"2026-10-23 00:19:47,967 | INFO | Batch 033: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:49.488605Z","level":"error","event":"2026-10-23 00:19:49,485 | INFO | weather_batch_033.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:49.493651Z","level":"error","event":"2026-10-23 00:19:49,493 | INFO | Batch 034: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:50.485384Z","level":"error","event":"2026-10-23 00:19:50,484 | INFO | weather_batch_034.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:50.492729Z","level":"error","event":"2026-10-23 00:19:50,492 | INFO | Batch 035: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:51.724567Z","level":"error","event":"2026-10-23 00:19:51,724 | INFO | weather_batch_035.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:51.735104Z","level":"error","event":"2026-10-23 00:19:51,733 | INFO | Batch 036: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:52.866960Z","level":"error","event":"2026-10-23 00:19:52,865 | INFO | weather_batch_036.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:52.872825Z","level":"error","event":"2026-10-23 00:19:52,871 | INFO | Batch 037: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:54.021024Z","level":"error","event":"2026-10-23 00:19:54,020 | INFO | weather_batch_037.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:54.063100Z","level":"error","event":"2026-10-23 00:19:54,028 | INFO | Batch 038: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:55.184067Z","level":"error","event":"2026-10-23 00:19:55,183 | INFO | weather_batch_038.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:55.191305Z","level":"error","event":"2026-10-23 00:19:55,190 | INFO | Batch 039: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:56.828435Z","level":"error","event":"2026-10-23 00:19:56,823 | INFO | weather_batch_039.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:19:56.843925Z","level":"error","event":"2026-10-23 00:19:56,843 | INFO | Batch 040: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:00.780827Z","level":"error","event":"2026-10-23 00:20:00,774 | INFO | weather_batch_040.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:00.982608Z","level":"error","event":"2026-10-23 00:20:00,800 | INFO | Batch 041: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:02.506210Z","level":"error","event":"2026-10-23 00:20:02,505 | INFO | weather_batch_041.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:02.512542Z","level":"error","event":"2026-10-23 00:20:02,511 | INFO | Batch 042: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:03.853054Z","level":"error","event":"2026-10-23 00:20:03,852 | INFO | weather_batch_042.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:03.868118Z","level":"error","event":"2026-10-23 00:20:03,867 | INFO | Batch 043: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:05.127319Z","level":"error","event":"2026-10-23 00:20:05,125 | INFO | weather_batch_043.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:05.137047Z","level":"error","event":"2026-10-23 00:20:05,136 | INFO | Batch 044: 25 territories; expected rows: 63,925.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:06.826970Z","level":"error","event":"2026-10-23 00:20:06,826 | INFO | weather_batch_044.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:06.900735Z","level":"error","event":"2026-10-23 00:20:06,845 | INFO | Batch 045: 3 territories; expected rows: 7,671.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:07.131511Z","level":"error","event":"2026-10-23 00:20:07,127 | INFO | weather_batch_045.csv exists and passed validation; skipping.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:07.132758Z","level":"error","event":"2026-10-23 00:20:07,128 | INFO | Selected extraction range completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:08.124823Z","level":"info","event":"Script finalizado correctamente: src/extraction/open_meteo.py","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":35}
+{"timestamp":"2026-10-23T00:20:08.125604Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}

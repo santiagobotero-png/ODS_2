@@ -1,0 +1,239 @@
+{"timestamp":"2026-10-23T00:20:09.833988Z","level":"info","event":"Stats instance was created in PID 7 but accessed in PID 455. Re-initializing.","logger":"airflow.stats","filename":"stats.py","lineno":57}
+{"timestamp":"2026-10-23T00:20:09.906944Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-10-23T00:20:09.915764Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_ods2.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:20:10.149221Z","level":"info","event":"Ejecutando comando: ['/usr/python/bin/python3.12', '/opt/airflow/project/src/validation/validate_weather_batches.py']","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":25}
+{"timestamp":"2026-10-23T00:20:14.351064Z","level":"error","event":"2026-10-23 00:20:14,350 | INFO | Discovered 45 weather batch files.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:14.352541Z","level":"error","event":"2026-10-23 00:20:14,350 | INFO | Expected weather units from extraction contract: {'temperature_2m_mean': '°C', 'temperature_2m_max': '°C', 'temperature_2m_min': '°C', 'precipitation_sum': 'mm', 'relative_humidity_2m_mean': '%', 'et0_fao_evapotranspiration': 'mm'}","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:14.410036Z","level":"error","event":"2026-10-23 00:20:14,409 | INFO | DIVIPOLA catalog validated: 1122 territorial codes.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:14.412096Z","level":"error","event":"2026-10-23 00:20:14,409 | INFO | All territorial classifications are included in the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:14.413209Z","level":"error","event":"2026-10-23 00:20:14,410 | INFO | Validating batch: weather_batch_001.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:15.957138Z","level":"error","event":"2026-10-23 00:20:15,956 | INFO | weather_batch_001.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:16.691502Z","level":"error","event":"2026-10-23 00:20:16,689 | INFO | weather_batch_001.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:16.737083Z","level":"error","event":"2026-10-23 00:20:16,736 | INFO | weather_batch_001.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:16.747517Z","level":"error","event":"2026-10-23 00:20:16,745 | INFO | weather_batch_001.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:16.750638Z","level":"error","event":"2026-10-23 00:20:16,749 | INFO | Validating batch: weather_batch_002.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:17.755109Z","level":"error","event":"2026-10-23 00:20:17,749 | INFO | weather_batch_002.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:18.647447Z","level":"error","event":"2026-10-23 00:20:18,646 | INFO | weather_batch_002.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:18.678760Z","level":"error","event":"2026-10-23 00:20:18,678 | INFO | weather_batch_002.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:18.691385Z","level":"error","event":"2026-10-23 00:20:18,688 | INFO | weather_batch_002.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:18.695583Z","level":"error","event":"2026-10-23 00:20:18,690 | INFO | Validating batch: weather_batch_003.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:19.690760Z","level":"error","event":"2026-10-23 00:20:19,690 | INFO | weather_batch_003.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:20.313743Z","level":"error","event":"2026-10-23 00:20:20,311 | INFO | weather_batch_003.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:20.371427Z","level":"error","event":"2026-10-23 00:20:20,368 | INFO | weather_batch_003.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:20.395511Z","level":"error","event":"2026-10-23 00:20:20,388 | INFO | weather_batch_003.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:20.403360Z","level":"error","event":"2026-10-23 00:20:20,390 | INFO | Validating batch: weather_batch_004.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:21.739442Z","level":"error","event":"2026-10-23 00:20:21,730 | INFO | weather_batch_004.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:22.331440Z","level":"error","event":"2026-10-23 00:20:22,328 | INFO | weather_batch_004.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:22.407595Z","level":"error","event":"2026-10-23 00:20:22,402 | INFO | weather_batch_004.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:22.420551Z","level":"error","event":"2026-10-23 00:20:22,420 | INFO | weather_batch_004.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:22.422806Z","level":"error","event":"2026-10-23 00:20:22,422 | INFO | Validating batch: weather_batch_005.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:24.150049Z","level":"error","event":"2026-10-23 00:20:24,128 | INFO | weather_batch_005.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:24.847821Z","level":"error","event":"2026-10-23 00:20:24,844 | INFO | weather_batch_005.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:24.916201Z","level":"error","event":"2026-10-23 00:20:24,915 | INFO | weather_batch_005.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:24.931575Z","level":"error","event":"2026-10-23 00:20:24,928 | INFO | weather_batch_005.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:24.936931Z","level":"error","event":"2026-10-23 00:20:24,935 | INFO | Validating batch: weather_batch_006.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:26.147402Z","level":"error","event":"2026-10-23 00:20:26,144 | INFO | weather_batch_006.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:26.679801Z","level":"error","event":"2026-10-23 00:20:26,676 | INFO | weather_batch_006.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:26.724930Z","level":"error","event":"2026-10-23 00:20:26,724 | INFO | weather_batch_006.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:26.736090Z","level":"error","event":"2026-10-23 00:20:26,735 | INFO | weather_batch_006.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:26.740254Z","level":"error","event":"2026-10-23 00:20:26,739 | INFO | Validating batch: weather_batch_007.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:28.022058Z","level":"error","event":"2026-10-23 00:20:28,021 | INFO | weather_batch_007.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:28.611744Z","level":"error","event":"2026-10-23 00:20:28,611 | INFO | weather_batch_007.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:28.642225Z","level":"error","event":"2026-10-23 00:20:28,641 | INFO | weather_batch_007.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:28.652723Z","level":"error","event":"2026-10-23 00:20:28,652 | INFO | weather_batch_007.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:28.654633Z","level":"error","event":"2026-10-23 00:20:28,654 | INFO | Validating batch: weather_batch_008.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:29.602922Z","level":"error","event":"2026-10-23 00:20:29,602 | INFO | weather_batch_008.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:30.327136Z","level":"error","event":"2026-10-23 00:20:30,325 | INFO | weather_batch_008.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:30.378288Z","level":"error","event":"2026-10-23 00:20:30,377 | INFO | weather_batch_008.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:30.388120Z","level":"error","event":"2026-10-23 00:20:30,387 | INFO | weather_batch_008.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:30.393757Z","level":"error","event":"2026-10-23 00:20:30,390 | INFO | Validating batch: weather_batch_009.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:31.274508Z","level":"error","event":"2026-10-23 00:20:31,274 | INFO | weather_batch_009.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:31.744178Z","level":"error","event":"2026-10-23 00:20:31,743 | INFO | weather_batch_009.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:31.784983Z","level":"error","event":"2026-10-23 00:20:31,769 | INFO | weather_batch_009.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:31.786088Z","level":"error","event":"2026-10-23 00:20:31,777 | INFO | weather_batch_009.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:31.787438Z","level":"error","event":"2026-10-23 00:20:31,779 | INFO | Validating batch: weather_batch_010.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:33.062654Z","level":"error","event":"2026-10-23 00:20:33,061 | INFO | weather_batch_010.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:33.850948Z","level":"error","event":"2026-10-23 00:20:33,850 | INFO | weather_batch_010.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:33.917752Z","level":"error","event":"2026-10-23 00:20:33,916 | INFO | weather_batch_010.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:33.938123Z","level":"error","event":"2026-10-23 00:20:33,937 | INFO | weather_batch_010.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:33.943125Z","level":"error","event":"2026-10-23 00:20:33,941 | INFO | Validating batch: weather_batch_011.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:35.116409Z","level":"error","event":"2026-10-23 00:20:35,115 | INFO | weather_batch_011.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:35.619611Z","level":"error","event":"2026-10-23 00:20:35,619 | INFO | weather_batch_011.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:35.642577Z","level":"error","event":"2026-10-23 00:20:35,642 | INFO | weather_batch_011.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:35.647858Z","level":"error","event":"2026-10-23 00:20:35,647 | INFO | weather_batch_011.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:35.650063Z","level":"error","event":"2026-10-23 00:20:35,649 | INFO | Validating batch: weather_batch_012.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:36.743928Z","level":"error","event":"2026-10-23 00:20:36,743 | INFO | weather_batch_012.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:37.534743Z","level":"error","event":"2026-10-23 00:20:37,534 | INFO | weather_batch_012.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:37.576264Z","level":"error","event":"2026-10-23 00:20:37,567 | INFO | weather_batch_012.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:37.581034Z","level":"error","event":"2026-10-23 00:20:37,576 | INFO | weather_batch_012.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:37.582768Z","level":"error","event":"2026-10-23 00:20:37,578 | INFO | Validating batch: weather_batch_013.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:39.400522Z","level":"error","event":"2026-10-23 00:20:39,399 | INFO | weather_batch_013.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:39.984266Z","level":"error","event":"2026-10-23 00:20:39,983 | INFO | weather_batch_013.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:40.023956Z","level":"error","event":"2026-10-23 00:20:40,023 | INFO | weather_batch_013.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:40.035867Z","level":"error","event":"2026-10-23 00:20:40,033 | INFO | weather_batch_013.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:40.037799Z","level":"error","event":"2026-10-23 00:20:40,037 | INFO | Validating batch: weather_batch_014.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:41.399983Z","level":"error","event":"2026-10-23 00:20:41,398 | INFO | weather_batch_014.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:42.035855Z","level":"error","event":"2026-10-23 00:20:42,032 | INFO | weather_batch_014.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:42.278755Z","level":"error","event":"2026-10-23 00:20:42,122 | INFO | weather_batch_014.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:42.285736Z","level":"error","event":"2026-10-23 00:20:42,142 | INFO | weather_batch_014.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:42.298372Z","level":"error","event":"2026-10-23 00:20:42,151 | INFO | Validating batch: weather_batch_015.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:44.065353Z","level":"error","event":"2026-10-23 00:20:44,062 | INFO | weather_batch_015.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:45.661963Z","level":"error","event":"2026-10-23 00:20:45,646 | INFO | weather_batch_015.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:45.790470Z","level":"error","event":"2026-10-23 00:20:45,790 | INFO | weather_batch_015.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:45.824157Z","level":"error","event":"2026-10-23 00:20:45,822 | INFO | weather_batch_015.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:45.828074Z","level":"error","event":"2026-10-23 00:20:45,825 | INFO | Validating batch: weather_batch_016.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:46.995937Z","level":"error","event":"2026-10-23 00:20:46,989 | INFO | weather_batch_016.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:47.760692Z","level":"error","event":"2026-10-23 00:20:47,760 | INFO | weather_batch_016.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:47.904363Z","level":"error","event":"2026-10-23 00:20:47,801 | INFO | weather_batch_016.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:47.905426Z","level":"error","event":"2026-10-23 00:20:47,812 | INFO | weather_batch_016.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:47.906535Z","level":"error","event":"2026-10-23 00:20:47,815 | INFO | Validating batch: weather_batch_017.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:49.224389Z","level":"error","event":"2026-10-23 00:20:49,223 | INFO | weather_batch_017.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:49.811845Z","level":"error","event":"2026-10-23 00:20:49,810 | INFO | weather_batch_017.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:49.838388Z","level":"error","event":"2026-10-23 00:20:49,837 | INFO | weather_batch_017.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:49.848074Z","level":"error","event":"2026-10-23 00:20:49,847 | INFO | weather_batch_017.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:49.850759Z","level":"error","event":"2026-10-23 00:20:49,849 | INFO | Validating batch: weather_batch_018.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:51.130194Z","level":"error","event":"2026-10-23 00:20:51,129 | INFO | weather_batch_018.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:51.888119Z","level":"error","event":"2026-10-23 00:20:51,882 | INFO | weather_batch_018.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:51.925740Z","level":"error","event":"2026-10-23 00:20:51,925 | INFO | weather_batch_018.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:51.940845Z","level":"error","event":"2026-10-23 00:20:51,940 | INFO | weather_batch_018.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:51.951747Z","level":"error","event":"2026-10-23 00:20:51,945 | INFO | Validating batch: weather_batch_019.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:53.631904Z","level":"error","event":"2026-10-23 00:20:53,627 | INFO | weather_batch_019.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:54.515966Z","level":"error","event":"2026-10-23 00:20:54,509 | INFO | weather_batch_019.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:54.559817Z","level":"error","event":"2026-10-23 00:20:54,559 | INFO | weather_batch_019.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:54.571845Z","level":"error","event":"2026-10-23 00:20:54,568 | INFO | weather_batch_019.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:54.573434Z","level":"error","event":"2026-10-23 00:20:54,571 | INFO | Validating batch: weather_batch_020.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:55.859843Z","level":"error","event":"2026-10-23 00:20:55,855 | INFO | weather_batch_020.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:56.553684Z","level":"error","event":"2026-10-23 00:20:56,553 | INFO | weather_batch_020.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:56.608802Z","level":"error","event":"2026-10-23 00:20:56,606 | INFO | weather_batch_020.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:56.621828Z","level":"error","event":"2026-10-23 00:20:56,621 | INFO | weather_batch_020.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:56.624250Z","level":"error","event":"2026-10-23 00:20:56,623 | INFO | Validating batch: weather_batch_021.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:58.038233Z","level":"error","event":"2026-10-23 00:20:58,037 | INFO | weather_batch_021.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:59.591096Z","level":"error","event":"2026-10-23 00:20:59,589 | INFO | weather_batch_021.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:59.727452Z","level":"error","event":"2026-10-23 00:20:59,680 | INFO | weather_batch_021.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:59.810875Z","level":"error","event":"2026-10-23 00:20:59,698 | INFO | weather_batch_021.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:20:59.826003Z","level":"error","event":"2026-10-23 00:20:59,704 | INFO | Validating batch: weather_batch_022.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:02.302979Z","level":"error","event":"2026-10-23 00:21:02,287 | INFO | weather_batch_022.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:03.050564Z","level":"error","event":"2026-10-23 00:21:03,036 | INFO | weather_batch_022.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:03.079763Z","level":"error","event":"2026-10-23 00:21:03,073 | INFO | weather_batch_022.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:03.085826Z","level":"error","event":"2026-10-23 00:21:03,084 | INFO | weather_batch_022.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:03.096268Z","level":"error","event":"2026-10-23 00:21:03,087 | INFO | Validating batch: weather_batch_023.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:08.081525Z","level":"error","event":"2026-10-23 00:21:08,080 | INFO | weather_batch_023.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:09.759652Z","level":"error","event":"2026-10-23 00:21:09,758 | INFO | weather_batch_023.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:09.869380Z","level":"error","event":"2026-10-23 00:21:09,856 | INFO | weather_batch_023.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:09.949285Z","level":"error","event":"2026-10-23 00:21:09,889 | INFO | weather_batch_023.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:09.997857Z","level":"error","event":"2026-10-23 00:21:09,902 | INFO | Validating batch: weather_batch_024.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:16.053356Z","level":"error","event":"2026-10-23 00:21:16,048 | INFO | weather_batch_024.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:17.843322Z","level":"error","event":"2026-10-23 00:21:17,842 | INFO | weather_batch_024.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:17.987342Z","level":"error","event":"2026-10-23 00:21:17,983 | INFO | weather_batch_024.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:18.099459Z","level":"error","event":"2026-10-23 00:21:18,017 | INFO | weather_batch_024.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:18.117966Z","level":"error","event":"2026-10-23 00:21:18,031 | INFO | Validating batch: weather_batch_025.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:22.467505Z","level":"error","event":"2026-10-23 00:21:22,463 | INFO | weather_batch_025.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:23.535368Z","level":"error","event":"2026-10-23 00:21:23,533 | INFO | weather_batch_025.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:23.567318Z","level":"error","event":"2026-10-23 00:21:23,566 | INFO | weather_batch_025.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:23.581589Z","level":"error","event":"2026-10-23 00:21:23,577 | INFO | weather_batch_025.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:23.584471Z","level":"error","event":"2026-10-23 00:21:23,580 | INFO | Validating batch: weather_batch_026.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:24.767033Z","level":"error","event":"2026-10-23 00:21:24,766 | INFO | weather_batch_026.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:25.551332Z","level":"error","event":"2026-10-23 00:21:25,546 | INFO | weather_batch_026.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:25.594393Z","level":"error","event":"2026-10-23 00:21:25,593 | INFO | weather_batch_026.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:25.616392Z","level":"error","event":"2026-10-23 00:21:25,612 | INFO | weather_batch_026.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:25.618282Z","level":"error","event":"2026-10-23 00:21:25,617 | INFO | Validating batch: weather_batch_027.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:27.612085Z","level":"error","event":"2026-10-23 00:21:27,611 | INFO | weather_batch_027.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:28.222993Z","level":"error","event":"2026-10-23 00:21:28,222 | INFO | weather_batch_027.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:28.259811Z","level":"error","event":"2026-10-23 00:21:28,259 | INFO | weather_batch_027.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:28.268967Z","level":"error","event":"2026-10-23 00:21:28,268 | INFO | weather_batch_027.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:28.271271Z","level":"error","event":"2026-10-23 00:21:28,270 | INFO | Validating batch: weather_batch_028.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:29.142830Z","level":"error","event":"2026-10-23 00:21:29,142 | INFO | weather_batch_028.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:29.691329Z","level":"error","event":"2026-10-23 00:21:29,688 | INFO | weather_batch_028.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:29.726043Z","level":"error","event":"2026-10-23 00:21:29,725 | INFO | weather_batch_028.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:29.740067Z","level":"error","event":"2026-10-23 00:21:29,736 | INFO | weather_batch_028.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:29.742595Z","level":"error","event":"2026-10-23 00:21:29,739 | INFO | Validating batch: weather_batch_029.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:31.231454Z","level":"error","event":"2026-10-23 00:21:31,229 | INFO | weather_batch_029.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:32.306706Z","level":"error","event":"2026-10-23 00:21:32,306 | INFO | weather_batch_029.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:32.393733Z","level":"error","event":"2026-10-23 00:21:32,393 | INFO | weather_batch_029.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:32.423903Z","level":"error","event":"2026-10-23 00:21:32,423 | INFO | weather_batch_029.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:32.428320Z","level":"error","event":"2026-10-23 00:21:32,425 | INFO | Validating batch: weather_batch_030.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:35.370626Z","level":"error","event":"2026-10-23 00:21:35,369 | INFO | weather_batch_030.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:36.720002Z","level":"error","event":"2026-10-23 00:21:36,718 | INFO | weather_batch_030.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:36.826031Z","level":"error","event":"2026-10-23 00:21:36,817 | INFO | weather_batch_030.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:36.849042Z","level":"error","event":"2026-10-23 00:21:36,848 | INFO | weather_batch_030.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:36.862829Z","level":"error","event":"2026-10-23 00:21:36,861 | INFO | Validating batch: weather_batch_031.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:39.796680Z","level":"error","event":"2026-10-23 00:21:39,789 | INFO | weather_batch_031.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:40.866157Z","level":"error","event":"2026-10-23 00:21:40,865 | INFO | weather_batch_031.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:41.061858Z","level":"error","event":"2026-10-23 00:21:40,995 | INFO | weather_batch_031.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:41.064670Z","level":"error","event":"2026-10-23 00:21:41,062 | INFO | weather_batch_031.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:41.070993Z","level":"error","event":"2026-10-23 00:21:41,070 | INFO | Validating batch: weather_batch_032.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:43.145810Z","level":"error","event":"2026-10-23 00:21:43,142 | INFO | weather_batch_032.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:44.060232Z","level":"error","event":"2026-10-23 00:21:44,059 | INFO | weather_batch_032.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:44.092767Z","level":"error","event":"2026-10-23 00:21:44,092 | INFO | weather_batch_032.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:44.103917Z","level":"error","event":"2026-10-23 00:21:44,103 | INFO | weather_batch_032.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:44.107619Z","level":"error","event":"2026-10-23 00:21:44,107 | INFO | Validating batch: weather_batch_033.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:45.490892Z","level":"error","event":"2026-10-23 00:21:45,488 | INFO | weather_batch_033.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:46.429826Z","level":"error","event":"2026-10-23 00:21:46,425 | INFO | weather_batch_033.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:46.498366Z","level":"error","event":"2026-10-23 00:21:46,464 | INFO | weather_batch_033.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:46.503269Z","level":"error","event":"2026-10-23 00:21:46,474 | INFO | weather_batch_033.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:46.504290Z","level":"error","event":"2026-10-23 00:21:46,476 | INFO | Validating batch: weather_batch_034.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:47.675153Z","level":"error","event":"2026-10-23 00:21:47,674 | INFO | weather_batch_034.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:48.528173Z","level":"error","event":"2026-10-23 00:21:48,525 | INFO | weather_batch_034.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:48.678762Z","level":"error","event":"2026-10-23 00:21:48,666 | INFO | weather_batch_034.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:48.704353Z","level":"error","event":"2026-10-23 00:21:48,703 | INFO | weather_batch_034.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:48.708493Z","level":"error","event":"2026-10-23 00:21:48,707 | INFO | Validating batch: weather_batch_035.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:50.593876Z","level":"error","event":"2026-10-23 00:21:50,591 | INFO | weather_batch_035.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:51.587062Z","level":"error","event":"2026-10-23 00:21:51,583 | INFO | weather_batch_035.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:51.679899Z","level":"error","event":"2026-10-23 00:21:51,623 | INFO | weather_batch_035.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:51.680893Z","level":"error","event":"2026-10-23 00:21:51,646 | INFO | weather_batch_035.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:51.683419Z","level":"error","event":"2026-10-23 00:21:51,650 | INFO | Validating batch: weather_batch_036.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:53.131220Z","level":"error","event":"2026-10-23 00:21:53,130 | INFO | weather_batch_036.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:54.021475Z","level":"error","event":"2026-10-23 00:21:54,016 | INFO | weather_batch_036.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:54.072948Z","level":"error","event":"2026-10-23 00:21:54,072 | INFO | weather_batch_036.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:54.091410Z","level":"error","event":"2026-10-23 00:21:54,090 | INFO | weather_batch_036.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:54.102078Z","level":"error","event":"2026-10-23 00:21:54,101 | INFO | Validating batch: weather_batch_037.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:55.542607Z","level":"error","event":"2026-10-23 00:21:55,541 | INFO | weather_batch_037.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:56.355582Z","level":"error","event":"2026-10-23 00:21:56,355 | INFO | weather_batch_037.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:56.400741Z","level":"error","event":"2026-10-23 00:21:56,400 | INFO | weather_batch_037.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:56.410484Z","level":"error","event":"2026-10-23 00:21:56,409 | INFO | weather_batch_037.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:56.413654Z","level":"error","event":"2026-10-23 00:21:56,413 | INFO | Validating batch: weather_batch_038.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:57.449921Z","level":"error","event":"2026-10-23 00:21:57,445 | INFO | weather_batch_038.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:58.056341Z","level":"error","event":"2026-10-23 00:21:58,053 | INFO | weather_batch_038.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:58.099575Z","level":"error","event":"2026-10-23 00:21:58,095 | INFO | weather_batch_038.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:58.114296Z","level":"error","event":"2026-10-23 00:21:58,112 | INFO | weather_batch_038.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:21:58.116954Z","level":"error","event":"2026-10-23 00:21:58,115 | INFO | Validating batch: weather_batch_039.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:01.052855Z","level":"error","event":"2026-10-23 00:22:01,039 | INFO | weather_batch_039.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:02.089140Z","level":"error","event":"2026-10-23 00:22:02,074 | INFO | weather_batch_039.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:02.132937Z","level":"error","event":"2026-10-23 00:22:02,132 | INFO | weather_batch_039.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:02.148408Z","level":"error","event":"2026-10-23 00:22:02,144 | INFO | weather_batch_039.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:02.152522Z","level":"error","event":"2026-10-23 00:22:02,149 | INFO | Validating batch: weather_batch_040.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:04.090055Z","level":"error","event":"2026-10-23 00:22:04,086 | INFO | weather_batch_040.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:04.871073Z","level":"error","event":"2026-10-23 00:22:04,870 | INFO | weather_batch_040.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:04.946871Z","level":"error","event":"2026-10-23 00:22:04,946 | INFO | weather_batch_040.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:04.967494Z","level":"error","event":"2026-10-23 00:22:04,966 | INFO | weather_batch_040.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:04.975868Z","level":"error","event":"2026-10-23 00:22:04,969 | INFO | Validating batch: weather_batch_041.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:06.738862Z","level":"error","event":"2026-10-23 00:22:06,738 | INFO | weather_batch_041.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:07.691741Z","level":"error","event":"2026-10-23 00:22:07,685 | INFO | weather_batch_041.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:07.738803Z","level":"error","event":"2026-10-23 00:22:07,738 | INFO | weather_batch_041.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:07.752451Z","level":"error","event":"2026-10-23 00:22:07,752 | INFO | weather_batch_041.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:07.762771Z","level":"error","event":"2026-10-23 00:22:07,759 | INFO | Validating batch: weather_batch_042.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:09.903552Z","level":"error","event":"2026-10-23 00:22:09,902 | INFO | weather_batch_042.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:10.613166Z","level":"error","event":"2026-10-23 00:22:10,609 | INFO | weather_batch_042.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:10.683590Z","level":"error","event":"2026-10-23 00:22:10,683 | INFO | weather_batch_042.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:10.743632Z","level":"error","event":"2026-10-23 00:22:10,715 | INFO | weather_batch_042.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:10.768171Z","level":"error","event":"2026-10-23 00:22:10,766 | INFO | Validating batch: weather_batch_043.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:13.302363Z","level":"error","event":"2026-10-23 00:22:13,301 | INFO | weather_batch_043.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:14.139972Z","level":"error","event":"2026-10-23 00:22:14,136 | INFO | weather_batch_043.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:14.181174Z","level":"error","event":"2026-10-23 00:22:14,180 | INFO | weather_batch_043.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:14.191770Z","level":"error","event":"2026-10-23 00:22:14,191 | INFO | weather_batch_043.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:14.197407Z","level":"error","event":"2026-10-23 00:22:14,194 | INFO | Validating batch: weather_batch_044.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:16.354895Z","level":"error","event":"2026-10-23 00:22:16,324 | INFO | weather_batch_044.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.455506Z","level":"error","event":"2026-10-23 00:22:17,453 | INFO | weather_batch_044.csv: temporal coverage passed for 25 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.491475Z","level":"error","event":"2026-10-23 00:22:17,489 | INFO | weather_batch_044.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.508431Z","level":"error","event":"2026-10-23 00:22:17,506 | INFO | weather_batch_044.csv: all 25 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.510862Z","level":"error","event":"2026-10-23 00:22:17,508 | INFO | Validating batch: weather_batch_045.csv","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.775507Z","level":"error","event":"2026-10-23 00:22:17,771 | INFO | weather_batch_045.csv: schema, types, finite numbers, municipality codes, coordinates, and keys passed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.880170Z","level":"error","event":"2026-10-23 00:22:17,879 | INFO | weather_batch_045.csv: temporal coverage passed for 3 municipalities.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.906339Z","level":"error","event":"2026-10-23 00:22:17,905 | INFO | weather_batch_045.csv: weather-domain checks completed.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.930976Z","level":"error","event":"2026-10-23 00:22:17,908 | INFO | weather_batch_045.csv: all 3 municipality codes belong to the extraction scope.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.943540Z","level":"error","event":"2026-10-23 00:22:17,911 | INFO | Cross-batch consistency passed: 1103 unique municipalities across 45 available batches.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.978491Z","level":"error","event":"2026-10-23 00:22:17,912 | INFO | COMPLETE EXTRACTION APPROVED: 45 batches, 1103 municipalities, 2820371 records.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:17.990541Z","level":"error","event":"2026-10-23 00:22:17,912 | INFO | Validation run finished with status COMPLETE: 45 batches, 2820371 records.","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:18.198949Z","level":"error","event":"2026-10-23 00:22:18,198 | INFO | Validation report saved: /opt/airflow/project/outputs/validation/weather_validation_20261023T002218Z.json","logger":"task.stderr"}
+{"timestamp":"2026-10-23T00:22:19.000331Z","level":"info","event":"Script finalizado correctamente: src/validation/validate_weather_batches.py","logger":"unusual_prefix_0c284e9c0c754564c6f291906bd5f4a4d7a704b2_dag_ods2","filename":"dag_ods2.py","lineno":35}
+{"timestamp":"2026-10-23T00:22:19.004839Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator","filename":"python.py","lineno":230}

@@ -1,0 +1,438 @@
+{
+  "started_at_utc": "2026-10-23T00:20:14.332176+00:00",
+  "input_directory": "/opt/airflow/project/data/raw/open_meteo_daily_batches",
+  "expected_period": {
+    "start_date": "2019-01-01",
+    "end_date": "2025-12-31",
+    "days_per_municipality": 2557
+  },
+  "expected_extraction": {
+    "municipalities": 1103,
+    "batches": 45,
+    "records": 2820371,
+    "weather_units": {
+      "temperature_2m_mean": "°C",
+      "temperature_2m_max": "°C",
+      "temperature_2m_min": "°C",
+      "precipitation_sum": "mm",
+      "relative_humidity_2m_mean": "%",
+      "et0_fao_evapotranspiration": "mm"
+    }
+  },
+  "batches_discovered": 45,
+  "batches_validated": 45,
+  "records_validated": 2820371,
+  "municipalities_validated": 1103,
+  "missing_batches": [],
+  "warnings": [],
+  "batch_results": [
+    {
+      "batch_file": "weather_batch_001.csv",
+      "batch_number": 1,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_002.csv",
+      "batch_number": 2,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_003.csv",
+      "batch_number": 3,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_004.csv",
+      "batch_number": 4,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_005.csv",
+      "batch_number": 5,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_006.csv",
+      "batch_number": 6,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_007.csv",
+      "batch_number": 7,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_008.csv",
+      "batch_number": 8,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_009.csv",
+      "batch_number": 9,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_010.csv",
+      "batch_number": 10,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_011.csv",
+      "batch_number": 11,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_012.csv",
+      "batch_number": 12,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_013.csv",
+      "batch_number": 13,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_014.csv",
+      "batch_number": 14,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_015.csv",
+      "batch_number": 15,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_016.csv",
+      "batch_number": 16,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_017.csv",
+      "batch_number": 17,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_018.csv",
+      "batch_number": 18,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_019.csv",
+      "batch_number": 19,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_020.csv",
+      "batch_number": 20,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_021.csv",
+      "batch_number": 21,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_022.csv",
+      "batch_number": 22,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_023.csv",
+      "batch_number": 23,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_024.csv",
+      "batch_number": 24,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_025.csv",
+      "batch_number": 25,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_026.csv",
+      "batch_number": 26,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_027.csv",
+      "batch_number": 27,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_028.csv",
+      "batch_number": 28,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_029.csv",
+      "batch_number": 29,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_030.csv",
+      "batch_number": 30,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_031.csv",
+      "batch_number": 31,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_032.csv",
+      "batch_number": 32,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_033.csv",
+      "batch_number": 33,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_034.csv",
+      "batch_number": 34,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_035.csv",
+      "batch_number": 35,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_036.csv",
+      "batch_number": 36,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_037.csv",
+      "batch_number": 37,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_038.csv",
+      "batch_number": 38,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_039.csv",
+      "batch_number": 39,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_040.csv",
+      "batch_number": 40,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_041.csv",
+      "batch_number": 41,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_042.csv",
+      "batch_number": 42,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_043.csv",
+      "batch_number": 43,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_044.csv",
+      "batch_number": 44,
+      "status": "PASSED",
+      "records": 63925,
+      "municipalities": 25,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    },
+    {
+      "batch_file": "weather_batch_045.csv",
+      "batch_number": 45,
+      "status": "PASSED",
+      "records": 7671,
+      "municipalities": 3,
+      "date_min": "2019-01-01",
+      "date_max": "2025-12-31"
+    }
+  ],
+  "status": "COMPLETE",
+  "error": null,
+  "finished_at_utc": "2026-10-23T00:22:17.912955+00:00"
+}

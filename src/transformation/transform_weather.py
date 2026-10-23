@@ -17,8 +17,8 @@ OUTPUT_DIR = PROJECT_ROOT / "data" / "processed"
 
 OUTPUT_FILE = OUTPUT_DIR / "weather_processed.csv"
 
-EXPECTED_BATCHES = set(range(1, 46))
-EXPECTED_MUNICIPALITIES = 1103
+TOTAL_BATCHES = 45
+EXPECTED_BATCHES = set(range(1, TOTAL_BATCHES + 1))
 
 START_DATE = pd.Timestamp("2019-01-01")
 END_DATE = pd.Timestamp("2025-12-31")
@@ -217,18 +217,36 @@ def ejecutar_transformacion() -> None:
     logger.info("Discovered %s batch files.", len(files))
     logger.info("Available batch numbers: %s", sorted(found_batches))
 
-    if missing_batches:
-        logger.warning(
-            "Missing batches (%s): %s",
-            len(missing_batches),
-            missing_batches,
+    if missing_batches or unexpected_batches:
+        details = []
+
+        if missing_batches:
+            details.append(
+                f"Missing batches: "
+                f"{[f'{n:03d}' for n in missing_batches]}"
+            )
+
+        if unexpected_batches:
+            details.append(
+                f"Unexpected batches: {sorted(unexpected_batches)}"
+            )
+
+        raise ValueError(
+            "Batch completeness check failed. "
+            + "; ".join(details)
+            + ". Transformation aborted."
         )
 
-    if unexpected_batches:
-        logger.warning(
-            "Batch numbers outside the expected range: %s",
-            unexpected_batches,
+    if found_batches != EXPECTED_BATCHES:
+        raise RuntimeError(
+            "The discovered batches do not match the expected set. "
+            "Transformation aborted."
         )
+
+    logger.info(
+        "Batch completeness verified: all %s expected batches are present.",
+        TOTAL_BATCHES,
+    )
 
     transformed_batches = [
         transformar_batch(path) for path in files
@@ -272,7 +290,7 @@ def ejecutar_transformacion() -> None:
         logger.info(
             "Distinct municipality codes in available batches: %s / %s",
             municipality_count,
-            EXPECTED_MUNICIPALITIES,
+            EXPECTED_BATCHES,
         )
     else:
         logger.warning(
@@ -313,7 +331,11 @@ def ejecutar_transformacion() -> None:
 
     logger.info("=" * 60)
     logger.info("TRANSFORMATION COMPLETED")
-    logger.info("Available batches: %s / 45", len(found_batches))
+    logger.info(
+    "Validated batch set: %s / %s",
+    len(found_batches),
+    TOTAL_BATCHES,
+    )
     logger.info("Consolidated rows: %s", len(consolidated))
     logger.info("Output: %s", OUTPUT_FILE)
     logger.info(

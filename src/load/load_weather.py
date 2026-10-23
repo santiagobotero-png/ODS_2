@@ -2,7 +2,7 @@
 from pathlib import Path
 import logging
 import os
-
+from dotenv import load_dotenv
 import pandas as pd
 import psycopg2
 from psycopg2.extras import execute_values
@@ -13,7 +13,7 @@ from psycopg2.extras import execute_values
 # ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-
+load_dotenv(PROJECT_ROOT / ".env")
 ARCHIVO_ORIGEN = (
     PROJECT_ROOT / "data" / "processed" / "weather_processed.csv"
 )
@@ -39,13 +39,21 @@ logger = logging.getLogger(__name__)
 
 
 def conectar():
-    """Conexión a la base de datos de negocio usando variables de entorno."""
     return psycopg2.connect(
-        host=os.environ["ETL_DB_HOST"],
-        port=os.environ["ETL_DB_PORT"],
-        dbname=os.environ["ETL_DB_NAME"],
-        user=os.environ["ETL_DB_USER"],
-        password=os.environ["ETL_DB_PASSWORD"],
+        host=os.getenv("ETL_DB_HOST", "localhost"),
+        port=os.getenv("ETL_DB_PORT", "5433"),
+        dbname=os.getenv(
+            "ETL_DB_NAME",
+            os.getenv("POSTGRES_DB"),
+        ),
+        user=os.getenv(
+            "ETL_DB_USER",
+            os.getenv("POSTGRES_USER"),
+        ),
+        password=os.getenv(
+            "ETL_DB_PASSWORD",
+            os.getenv("POSTGRES_DB_PASSWORD"),
+        ),
     )
 
 
@@ -69,6 +77,12 @@ def cargar_csv():
         df["date"], errors="raise"
     ).dt.date
 
+    df["municipality_code"] = (
+        df["municipality_code"]
+        .str.strip()
+        .str.zfill(5)
+    )
+
     return df
 
 
@@ -90,65 +104,38 @@ def ejecutar_lotes(cursor, sql, registros):
     return total
 
 
-def cargar_dim_geografia(cursor, df):
-    """Carga los municipios y sus coordenadas."""
-    geografia = (
-        df[
-            [
-                "municipality_code",
-                "municipality_name",
-                "latitude",
-                "longitude",
-            ]
-        ]
-        .drop_duplicates(subset=["municipality_code"])
-        .sort_values("municipality_code")
+def obtener_claves_geografia(cursor, df):
+    codigos = (
+        df["municipality_code"]
+        .dropna()
+        .astype(str)
+        .str.strip()
+        .str.zfill(5)
+        .unique()
+        .tolist()
     )
-
-    registros = [
-        (
-            None,  # codigo_departamento: no disponible en el CSV
-            None,  # departamento: no disponible en el CSV
-            str(row.municipality_code),
-            str(row.municipality_name),
-            row.latitude,
-            row.longitude,
-        )
-        for row in geografia.itertuples(index=False)
-    ]
-
-    sql = """
-        INSERT INTO weather.dim_geografia (
-            codigo_departamento,
-            departamento,
-            codigo_municipio,
-            municipio,
-            latitud,
-            longitud
-        )
-        VALUES %s
-        ON CONFLICT (codigo_municipio)
-        DO UPDATE SET
-            municipio = EXCLUDED.municipio,
-            latitud = EXCLUDED.latitud,
-            longitud = EXCLUDED.longitud
-    """
-
-    ejecutar_lotes(cursor, sql, registros)
 
     cursor.execute("""
         SELECT codigo_municipio, sk_geografia
-        FROM weather.dim_geografia
-    """)
+        FROM comun.dim_geografia
+        WHERE codigo_municipio = ANY(%s)
+    """, (codigos,))
 
-    claves = {
-        codigo: sk
-        for codigo, sk in cursor.fetchall()
-    }
+    claves = dict(cursor.fetchall())
+
+    faltantes = sorted(set(codigos) - set(claves))
+
+    if faltantes:
+        raise ValueError(
+            "Hay municipios de Weather ausentes en "
+            "comun.dim_geografia: "
+            f"{faltantes[:20]}"
+        )
 
     logger.info(
-        "Dimensión geográfica procesada: %s municipios.",
-        len(registros),
+        "Municipios de Weather encontrados en la dimensión "
+        "compartida: %s",
+        len(claves),
     )
 
     return claves
@@ -279,8 +266,8 @@ def cargar_fact_clima(cursor, df, claves_geo, claves_fecha):
             batch_id,
         ) = row
 
-        codigo = str(codigo)
-        fecha = fecha
+        codigo = str(codigo).strip().zfill(5)
+
 
         if codigo not in claves_geo:
             raise ValueError(
@@ -347,7 +334,7 @@ def main():
     try:
         with conn:
             with conn.cursor() as cursor:
-                claves_geo = cargar_dim_geografia(cursor, df)
+                claves_geo = obtener_claves_geografia(cursor, df)
                 claves_fecha = cargar_dim_fecha(cursor, df)
 
                 total_hechos = cargar_fact_clima(
@@ -360,11 +347,11 @@ def main():
                 cursor.execute("""
                     SELECT
                         (SELECT COUNT(*)
-                         FROM weather.dim_geografia),
+                        FROM comun.dim_geografia),
                         (SELECT COUNT(*)
-                         FROM weather.dim_fecha),
+                        FROM weather.dim_fecha),
                         (SELECT COUNT(*)
-                         FROM weather.fact_clima_diario)
+                        FROM weather.fact_clima_diario)
                 """)
 
                 municipios, fechas, hechos = cursor.fetchone()
