@@ -1,0 +1,1 @@
+Set-Content -Path .gitignore -Value "airflow_logs/`n*.log`n__pycache__/`n*.pyc`n.venv/"

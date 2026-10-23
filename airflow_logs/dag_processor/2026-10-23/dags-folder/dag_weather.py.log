@@ -94,3 +94,15 @@
 {"timestamp":"2026-10-23T00:49:30.704324Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
 {"timestamp":"2026-10-23T00:50:01.146219Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
 {"timestamp":"2026-10-23T00:50:32.190746Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:51:02.849487Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:51:33.582742Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:52:04.178507Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:52:34.668915Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:53:05.703953Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:53:36.042787Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:54:06.611178Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:54:36.998117Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:55:07.863309Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:55:38.277137Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:56:08.920983Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-10-23T00:56:39.782178Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_weather.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
